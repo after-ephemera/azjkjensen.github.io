@@ -34,17 +34,27 @@ I've been at the company longer than almost 70% of people, and we successfully k
 
 ## the scale is unimaginable
 
-The work I do matters and affects peoples' lives around the world. 
+The work I do matters and affects peoples' lives around the world. My work is specifically focused on scalability, so it's nice that I get to work at a place where the scale reaches heights that really are unprecedented. With billions of people using our services, many many owned servers, and [19 data centers in service or planned](https://www.facebook.com/KunaDataCenter/posts/pfbid0VxYkvWuBGyCNo67TNtHEgR2n3AAGtKaTbFucds3paw6J1wAUtFbWUqxjLQGjUun7l){:target="blank"}, I am a part of an operational marvel. The work my team does now to protect privacy takes a holistic approach to the entire lifecycle of data people trust Meta with. Big power, big responsibility.
 
 ## the combination of autonomy and comfort is unmatched
-- Traditional engineering companies get bogged down and may offer autonomy but don't value their employees the same.
-- Non-tech companies may offer comfort to get you to join but growth is stunted.
-- Startups offer unprecedented levels of autonomy, but at the cost of significant risk to your future, higher-than-acceptable stress levels.
+
+In my experience, traditional engineering companies get bogged down with process and bureaucracy. They may offer limited autonomy but don't value their employees in the way large tech companies do and definitely aren't bottom-up driven like Meta. Engineers identify, scope, prioritize, and choose our own projects. I haven't heard of a more traditional company that does something like this.
+
+Non-tech companies may offer a high level of comfort (rest-and-vest, probably minus the vest) to get you to join but growth may be stunted by zero commitment to engineering development. I am especially skeptical of companies that are not historically technical reframing their business to be seen as a tech company – realizing a change like that requires revolutionizing your business and probably making people unhappy, so I assume almost always it's a surface level marketing ploy to get better talent. I don't trust it.
+
+Startups offer unprecedented levels of autonomy, often even expecting you to wear new hats each week. But it can come at the cost of significant risk to the future of your career and higher-than-acceptable stress levels. The organization depends on you, so you must perform to keep it afloat. There is nothing wrong with taking this on if you are invested, but from my perspective you better own a big chunk of the company if you're putting in as much time as the executive-level employees.
+
+On the other hand, Meta offers me a balance of autonomy and comfort. My work is driven by me and supported by my managers. The impact I make wholly depends on prioritization and effort, but I am not expected to make myself unhealthy in service of someone else's expectations. I am able to push myself out of my comfort zone and continually grow. There is a clear path for me to grow as an engineer and in my career. Plus, the company offers all of the regular established-corporation things like a 401k with matching, health insurance, and regular, reliable pay.
+
 ## the company treats me like a rockstar
-- pay, food, perks, travel, free gear, parties and events
-- IVF + heart surgery
+
+High pay, free food, endless perks, business travel, free gear, extravagant parties and events. I really feel like a rockstar here. Things toned down during the pandemic a bit but they are beginning to return. Going to company events with my friends and family has been one of the things I look forward to the most throughout the year. 
+
+On a more somber note, my work fertility benefit and health insurance took on more than the lion's share of our costs for fertility treatment, IVF, and post-delivery treatment and surgery. That, plus the four months of parental leave have been an immeasurable benefit for us along our bumpy journey into parenthood.
 
 ## reasons I could leave
+
+
 - PR
 - it's not cool
 - pay raise
