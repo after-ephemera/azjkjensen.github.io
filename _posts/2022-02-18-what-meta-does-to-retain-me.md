@@ -6,9 +6,6 @@ tags:
   - work
   - meta
 last_modified_at: 2022-02-18T09:25:52-05:00
-image: 
-  path: "../images/parents.png"
-  thumbnail: "../images/parents.png"
 excerpt: ""
 ---
 
@@ -56,10 +53,12 @@ On a more somber note, my work fertility benefit and health insurance took on mo
 
 The company is facing real scrutiny right now. It takes resolve to work hard through it, but I know my work does good for people who rely on us to be good stewards of their data. 
 
-It's not cool to work at Meta anymore? The systems I work on impact real people. I get to work on hard problems.
+It's not cool to work at Meta anymore? The systems I work on impact real people. I get to work on hard problems. That's cool enough for me.
 
-Other opportunities could probably pay me more, especially in today's job market. 
+Other opportunities could probably pay me more, especially in today's job market. But things like the IVF benefit and the mission-focused and bottom-up driven culture combined with the balance I have found between my life at home and my life at work is hard to match. 
 
 ## when will I leave?
 
-Who knows!
+Who knows! I'm not in a rush to go anywhere else quick.
+
+I am exploring public policy by serving on the [Menlo Park Clean Streets Commission](https://beta.menlopark.org/Government/Commissions-and-committees/Complete-Streets-Commission){:target="blank"}. I'm always contemplating ideas that would be worth building my own business around. But nothing else is pulling me away right now. For now, Meta gets to retain me.
