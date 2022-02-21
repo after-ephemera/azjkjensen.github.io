@@ -45,7 +45,9 @@ On the other hand, Meta offers me a balance of autonomy and comfort. My work is 
 
 ## the company treats me like a rockstar
 
-High pay, free food, endless perks, business travel, free gear, extravagant parties and events. I really feel like a rockstar here. Things toned down during the pandemic a bit but they are beginning to return. Going to company events with my friends and family has been one of the things I look forward to the most throughout the year. 
+High pay, free food, endless perks, business travel, free gear, extravagant parties and events. I really feel like a rockstar here. 
+
+Things toned down during the pandemic a bit but they are beginning to return. Going to company events with my friends and family has been one of the things I look forward to the most throughout the year. 
 
 On a more somber note, my work fertility benefit and health insurance took on more than the lion's share of our costs for fertility treatment, IVF, and post-delivery treatment and surgery. That, plus the four months of parental leave have been an immeasurable benefit for us along our bumpy journey into parenthood.
 
@@ -55,7 +57,7 @@ The company is facing real scrutiny right now. It takes resolve to work hard thr
 
 It's not cool to work at Meta anymore? The systems I work on impact real people. I get to work on hard problems. That's cool enough for me.
 
-Other opportunities could probably pay me more, especially in today's job market. But things like the IVF benefit and the mission-focused and bottom-up driven culture combined with the balance I have found between my life at home and my life at work is hard to match. 
+Other opportunities could probably pay me more, especially in today's job market. But things like the IVF benefit and the mission-focused and bottom-up driven culture combined with the balance I have found between my life at home and my life at work are hard to match. 
 
 ## when will I leave?
 
