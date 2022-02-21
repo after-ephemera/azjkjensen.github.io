@@ -5,7 +5,7 @@ categories:
 tags:
   - work
   - meta
-last_modified_at: 2022-02-18T09:25:52-05:00
+last_modified_at: 2022-02-21:25:52-05:00
 excerpt: ""
 ---
 
@@ -63,4 +63,6 @@ Other opportunities could probably pay me more, especially in today's job market
 
 Who knows! I'm not in a rush to go anywhere else quick.
 
-I am exploring public policy by serving on the [Menlo Park Clean Streets Commission](https://beta.menlopark.org/Government/Commissions-and-committees/Complete-Streets-Commission){:target="blank"}. I'm always contemplating ideas that would be worth building my own business around. But nothing else is pulling me away right now. For now, Meta gets to retain me.
+I am exploring public policy by serving on the [Menlo Park Clean Streets Commission](https://beta.menlopark.org/Government/Commissions-and-committees/Complete-Streets-Commission){:target="blank"}. I'm always contemplating ideas that would be worth building my own business around too. I could see myself leaving to found or lead an early company in a while, but nothing else is pulling me away right now. 
+
+For now, Meta gets to retain me.
