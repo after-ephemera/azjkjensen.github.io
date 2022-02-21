@@ -21,7 +21,7 @@ Every place I've worked has offered different things, but for me, Meta is specia
 
 The people at this company actually believe in the mission of bringing the world closer together. They recognize and embrace the huge responsibility it puts on us. 
 
-Working previously on AR/VR and now in Privacy, I have seen people at various levels of the company fight for the interests and safety of the billions of people who use our services, do the right thing at the cost of their reputation and the ever-pervasive (and powerful!) "move fast" culture, and build meaningful products that peoples' livelihood is based on. My anecdotal experience is limited, but I'm pretty sure these things are rare.
+Working previously on AR/VR and now in Privacy, I have seen people at various levels of the company fight for the interests and safety of the billions of people who use our services, do the right thing at the cost of their reputation and the ever-pervasive (and powerful!) "move fast" culture, and build meaningful products that peoples' livelihoods are based on. My anecdotal experience is limited, but I'm pretty sure these things are rare.
 
 The nature of my work lets me ride the coattails of some of the best engineering leaders in the world. Listening to Michael Abrash's vision for the future of augmented and virtual reality gave me a deeper respect for the Xerox PARC folks who invented personal computing. Seeing people embrace that vision gave me confidence that the world will reinvent it again. My immediate and skip-level managers know how to build teams that get stuff done. The engineers on my teams have serious experience running distributed systems. Working with these people is exciting!
 
