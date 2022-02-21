@@ -54,12 +54,12 @@ On a more somber note, my work fertility benefit and health insurance took on mo
 
 ## reasons I could leave
 
+The company is facing real scrutiny right now. It takes resolve to work hard through it, but I know my work does good for people who rely on us to be good stewards of their data. 
 
-- PR
-- it's not cool
-- pay raise
+It's not cool to work at Meta anymore? The systems I work on impact real people. I get to work on hard problems.
+
+Other opportunities could probably pay me more, especially in today's job market. 
 
 ## when will I leave?
 
-
-
+Who knows!
