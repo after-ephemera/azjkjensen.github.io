@@ -25,13 +25,16 @@ Working previously on AR/VR and now in Privacy, I have seen people at various le
 
 The nature of my work lets me ride the coattails of some of the best engineering leaders in the world. Listening to Michael Abrash's vision for the future of augmented and virtual reality gave me a deeper respect for the Xerox PARC folks who invented personal computing. Seeing people embrace that vision gave me confidence that the world will reinvent it again. My immediate and skip-level managers know how to build teams that get stuff done. The engineers on my teams have serious experience running distributed systems. Working with these people is exciting!
 
+I've been at the company longer than almost 70% of people, and we successfully keep hiring people like this! 
+
 I do miss meeting in person. I have been "in office" on and off throughought the pandemic due to needing physical access on my first team and opting into it on my second team. Some of my team is in the office during the week, so I appreciate the time together. The "aura of magic" that used to permeate the Menlo Park campus that once belonged to Sun Microsystems is just beginning to return though. The tens of thousands of people who joined the company since the pandemic started probably don't feel that magic in the same way I did as a wide-eyed intern in 2018. I'm still crossing my fingers that it returns to its full glory, but time (and COVID) will tell.
 
-I've been at the company longer than almost 70% of people, and we successfully keep hiring people like this! 
 
 ## the scale is unimaginable
 
-The work I do matters and affects peoples' lives around the world. My work is specifically focused on scalability, so it's nice that I get to work at a place where the scale reaches heights that really are unprecedented. With billions of people using our services, many many owned servers, and [19 data centers in service or planned](https://www.facebook.com/KunaDataCenter/posts/pfbid0VxYkvWuBGyCNo67TNtHEgR2n3AAGtKaTbFucds3paw6J1wAUtFbWUqxjLQGjUun7l){:target="blank"}, I am a part of an operational marvel. The work my team does now to protect privacy takes a holistic approach to the entire lifecycle of data people trust Meta with. Big power, big responsibility.
+The work I do matters and affects peoples' lives around the world. My work is specifically focused on scalability, so it's nice that I get to work at a place where the scale reaches heights that really are unprecedented. With billions of people using our services, many many owned servers, and [19 data centers in service or planned](https://www.facebook.com/KunaDataCenter/posts/pfbid0VxYkvWuBGyCNo67TNtHEgR2n3AAGtKaTbFucds3paw6J1wAUtFbWUqxjLQGjUun7l){:target="blank"}, I am a part of an operational marvel. 
+
+The work my team does now to protect privacy takes a holistic approach to the entire lifecycle of data people trust Meta with. Businesses run entirely on Facebook and Instagram, and they rely on us to protect their privacy. Private conversations between people on WhatsApp or Messenger are expected to remain private. Embracing the metaverse will introduce new dimensions of identity- and spatial-privacy that society (and Meta) will need to grapple with too. Big power, big responsibility. It's a serious challenge that excites me.
 
 ## the combination of autonomy and comfort is unmatched
 
@@ -47,7 +50,7 @@ On the other hand, Meta offers me a balance of autonomy and comfort. My work is 
 
 High pay, free food, endless perks, business travel, free gear, extravagant parties and events. I really feel like a rockstar here. 
 
-Things toned down during the pandemic a bit but they are beginning to return. Going to company events with my friends and family has been one of the things I look forward to the most throughout the year. 
+Going to company events with my friends and family was something I really looked forward to. Things toned down during the pandemic a bit but they are beginning to return, hopefully better than ever!
 
 On a more somber note, my work fertility benefit and health insurance took on more than the lion's share of our costs for fertility treatment, IVF, and post-delivery treatment and surgery. That, plus the four months of parental leave have been an immeasurable benefit for us along our bumpy journey into parenthood.
 
@@ -57,12 +60,12 @@ The company is facing real scrutiny right now. It takes resolve to work hard thr
 
 It's not cool to work at Meta anymore? The systems I work on impact real people. I get to work on hard problems. That's cool enough for me.
 
-Other opportunities could probably pay me more, especially in today's job market. But things like the IVF benefit and the mission-focused and bottom-up driven culture combined with the balance I have found between my life at home and my life at work are hard to match. 
+Other opportunities could probably pay me more, especially in today's job market. But things like the IVF benefit and the mission-focused and bottom-up driven culture – combined with the balance I have found between my life at home and my life at work – are hard to match. 
 
 ## when will I leave?
 
 Who knows! I'm not in a rush to go anywhere else quick.
 
-I am exploring public policy by serving on the [Menlo Park Clean Streets Commission](https://beta.menlopark.org/Government/Commissions-and-committees/Complete-Streets-Commission){:target="blank"}. I'm always contemplating ideas that would be worth building my own business around too. I could see myself leaving to found or lead an early company in a while, but nothing else is pulling me away right now. 
+I am exploring public policy by serving on the [Menlo Park Clean Streets Commission](https://beta.menlopark.org/Government/Commissions-and-committees/Complete-Streets-Commission){:target="blank"} and helping the City Council make informed decisions regarding local car, bike, and pedestrian transporation. I'm always contemplating ideas that would be worth building my own business around too. I could see myself leaving to found or lead an early company someday, but nothing else is pulling me away right now. 
 
-For now, Meta gets to retain me.
+For now, Meta gets to keep me around.
