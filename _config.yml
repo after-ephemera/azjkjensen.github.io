@@ -95,9 +95,6 @@ author:
 
 # Footer Links
 footer_links:
-  - title: Instagram
-    url: https://www.instagram.com/lovedonesandzeros/
-    icon: fab fa-instagram
   - title: Github
     url: https://github.com/jkjetty
     icon: fab fa-github-square
