@@ -34,7 +34,7 @@ facebook_analytics: "863416817201173"
 disqus:
   shortname: # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
-  username: azjkjensen # site's Twitter username, e.g. "mmistakes"
+  username: jkjetty # site's Twitter username, e.g. "mmistakes"
 
 # Liquid
 liquid:
@@ -90,7 +90,7 @@ author:
   name: Jk J
   picture:
   email: azjkjensen@gmail.com
-  twitter: "@azjkjensen"
+  twitter: "@jkjetty"
   links:
 
 # Footer Links
@@ -99,8 +99,8 @@ footer_links:
     url: https://www.instagram.com/lovedonesandzeros/
     icon: fab fa-instagram
   - title: Github
-    url: https://github.com/azjkjensen
+    url: https://github.com/jkjetty
     icon: fab fa-github-square
   - title: Twitter
-    url: https://twitter.com/azjkjensen
+    url: https://twitter.com/jkjetty
     icon: fab fa-twitter-square
