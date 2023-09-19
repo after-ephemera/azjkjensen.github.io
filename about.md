@@ -8,7 +8,7 @@ the best people i know write. technical skills only get you so far. i have bigge
 
 ### about me
 
-i'm currently building privacy tooling for data teams. go check out get-jetty.com and reach out to me if you want to learn more!
+i'm currently building production systems at [mysten labs](https://mystenlabs.com){:target="\_blank"}.
 
 i was a production engineer at meta for a few years, working on privacy infrastructure and AR/VR. before that, i was at Arizona State University in [meteor studio](http://meteor.ame.asu.edu/){:target="\_blank"} working on new research in augmented reality security and privacy.
 
@@ -16,4 +16,4 @@ i know software will define much of the future of humanity, and my strongest des
 
 ### reach out
 
-i can be reached fairly easily at all the usual places like [twitter](https://twitter.com/jkjetty){:target="\_blank"} or [messenger](https://www.facebook.com/lovedonesandzeros){:target="\_blank"}.
+i can be reached fairly easily at all the usual places like [twitter](https://twitter.com/after_ephemera){:target="\_blank"} or [messenger](https://www.facebook.com/lovedonesandzeros){:target="\_blank"}.

@@ -1,3 +1,4 @@
+---
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -13,28 +14,32 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-remote_theme: "mmistakes/so-simple-theme"
+remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "Jk Jensen"
+title: Jk Jensen
 description: ""
 baseurl: # the subpath of your site, e.g. "/blog"
-url: "http://jkjensen.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: "/images/logo2.png" # path of site logo, e.g. "/images/logo.png"
+url: http://jkjensen.me # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+logo: /images/logo2.png # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
 mathjax: # MathJax equations, e.g. true
+
 google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-  - name: "Lora"
-    weights: "400,400i,700,700i"
-google_analytics: "UA-90708894-2" # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+  - name: Source Sans Pro
+    weights: 400,400i,700,700i
+  - name: Lora
+    weights: 400,400i,700,700i
+
+google_analytics: UA-90708894-2 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 facebook_analytics: "863416817201173"
+
 disqus:
   shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+
 twitter:
-  username: jkjetty # site's Twitter username, e.g. "mmistakes"
+  username: after_ephemera # site's Twitter username, e.g. "mmistakes"
 
 # Liquid
 liquid:
@@ -43,16 +48,15 @@ liquid:
 # Build settings
 permalink: /:title/
 markdown: kramdown
+
 feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: /page:num/
-
 # Search
 search_full_content: false # can have performance implications for large sites
-
 # Taxonomy pages
 # category_archive_path: "/categories/#"
 # tag_archive_path: "/tags/#"
@@ -68,7 +72,6 @@ search_full_content: false # can have performance implications for large sites
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -79,25 +82,25 @@ plugins:
 defaults:
   # Posts defaults
   - scope:
-      path: "_posts"
+      path: _posts
       type: posts
     values:
       layout: post
       share: true
 
 # Site Author
-author: 
+author:
   name: Jk J
   picture:
   email: azjkjensen@gmail.com
-  twitter: "@jkjetty"
+  twitter: "@after_ephemera"
   links:
 
 # Footer Links
 footer_links:
   - title: Github
-    url: https://github.com/jkjetty
+    url: https://github.com/after-ephemera
     icon: fab fa-github-square
   - title: Twitter
-    url: https://twitter.com/jkjetty
+    url: https://twitter.com/after_ephemera
     icon: fab fa-twitter-square
