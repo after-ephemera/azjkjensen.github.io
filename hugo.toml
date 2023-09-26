@@ -1,0 +1,31 @@
+baseURL = 'https://jkjensen.me'
+languageCode = 'en-us'
+title = 'jk jensen'
+theme = 'yinyang'
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+guessSyntax = true
+noClasses = true
+style = "bw"
+tabWidth = 2
+
+
+[author]
+name = "Jk Jensen"
+homepage = "https://jkjensen.me"
+
+[params]
+headTitle = "not kidding"
+mainSections = ["posts", "about"]
+twitterCards = true
+extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90708894-2"></script>'
+disqus = "jkjensen"
+about = "/about/about"
+
+[[params.socials]]
+name = "github"
+link = "https://github.com/after-ephemera"
