@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kotlin on jk jensen</title>
+    <link>https://jkjensen.me/tags/kotlin/</link>
+    <description>Recent content in kotlin on jk jensen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Apr 2018 14:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>using the NewInstance pattern in kotlin</title>
+      <link>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</link>
+      <pubDate>Thu, 05 Apr 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</guid>
+      <description>Kotlin has a handful of fundamental differences from Java, not the least of which being the omission of static members and methods. This can cause a bit of a headache when trying to duplicate typical Android patterns using Android’s newest official language{:target=&amp;quot;_blank&amp;quot;}.
+Skip the prose and get to the code via this Github gist{:target=&amp;quot;_blank&amp;quot;}.
+Java Example In Java Android development it is common to add a static method called newInstance() to a fragment class like this:</description>
+    </item>
+    
+  </channel>
+</rss>

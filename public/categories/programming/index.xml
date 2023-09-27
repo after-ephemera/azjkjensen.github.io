@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on jk jensen</title>
+    <link>https://jkjensen.me/categories/programming/</link>
+    <description>Recent content in programming on jk jensen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Mar 2019 08:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mobile security series part 5: cryptographic storage</title>
+      <link>https://jkjensen.me/posts/2019-03-05-android-security-pt-5/</link>
+      <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-03-05-android-security-pt-5/</guid>
+      <description>This post is the fifth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2 part 3 part 4
+Skip the prose and get to the code via https://github.com/azjkjensen/android-encryption-starter{:target=&amp;quot;_blank&amp;quot;}
+Cryptography: you know it&amp;rsquo;s good, hope it happens, pray it works. But dealing with sensitive information is a topic that has been rising in popularity in recent years, and it&amp;rsquo;s important to understand how encryption is used.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 6: device security</title>
+      <link>https://jkjensen.me/posts/2019-03-29-android-security-pt-6/</link>
+      <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-03-29-android-security-pt-6/</guid>
+      <description>This post is the sixth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2 part 3 part 4 part 5
+intro In the previous posts in this series we&amp;rsquo;ve discussed a slew of security features on Android, mostly focusing on protecting the user from malicious software.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 3: package management</title>
+      <link>https://jkjensen.me/posts/2019-02-05-android-security-pt-3/</link>
+      <pubDate>Tue, 05 Feb 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-02-05-android-security-pt-3/</guid>
+      <description>This post is the third in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2
+Lately I&amp;rsquo;ve been spending a lot of time seeking to understand Android at a lower level to drive the research I am doing on privacy and security in augmented reality.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 4: network security</title>
+      <link>https://jkjensen.me/posts/2019-02-21-android-security-pt-4/</link>
+      <pubDate>Tue, 05 Feb 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-02-21-android-security-pt-4/</guid>
+      <description>This post is the fourth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2 part 3
+Network security is an enormous and ever-changing field, but some things have remained effectively constant for a while now. Except for the threat that quantum computing poses to it, high-complexity encryption has consistently been shown to protect sensitive data from prying eyes.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 2: permissions</title>
+      <link>https://jkjensen.me/posts/2019-01-23-android-security-pt-2/</link>
+      <pubDate>Wed, 23 Jan 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-01-23-android-security-pt-2/</guid>
+      <description>This post is the second part of a series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1
+Permissions are a fundamental part of any computer system&amp;rsquo;s security model and mobile systems are no exception. We briefly addressed them briefly in the last post on architecture, but here we will go into detail on what permissions are and how they are enforced.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 1: the android platform</title>
+      <link>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</link>
+      <pubDate>Mon, 07 Jan 2019 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</guid>
+      <description>This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.
+android architecture In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform.</description>
+    </item>
+    
+    <item>
+      <title>take pride in a conglomeration of work</title>
+      <link>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</link>
+      <pubDate>Thu, 08 Nov 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</guid>
+      <description>The saying goes something like &amp;ldquo;jack of all trades, master of none&amp;rdquo; right?
+There is something to be said about people who dig deep into a single problem and spend their entire life&amp;rsquo;s work focused there. Just look at people like Stephen Hawking{:target=&amp;quot;_blank&amp;quot;}. His life was his craft, and he was and continues to be richly rewarded for persistence and intelligence. Hawking left behind a legacy that is simultaneously unbelievable and inspiring.</description>
+    </item>
+    
+    <item>
+      <title>automating myself out of static IP paywalls</title>
+      <link>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</link>
+      <pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</guid>
+      <description>For a while I had an itch to set up my own home server. Not Plex or Kodi or anything like that. I just wanted a machine that I could access from anywhere and tinker with. I am by no means a network genius though; thus the itch went unscratched. Until now.
+Skip the prose and get to the code via this Github repository{:target=&amp;quot;_blank&amp;quot;}.
+Let&amp;rsquo;s start with a little background.</description>
+    </item>
+    
+    <item>
+      <title>using the NewInstance pattern in kotlin</title>
+      <link>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</link>
+      <pubDate>Thu, 05 Apr 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</guid>
+      <description>Kotlin has a handful of fundamental differences from Java, not the least of which being the omission of static members and methods. This can cause a bit of a headache when trying to duplicate typical Android patterns using Android’s newest official language{:target=&amp;quot;_blank&amp;quot;}.
+Skip the prose and get to the code via this Github gist{:target=&amp;quot;_blank&amp;quot;}.
+Java Example In Java Android development it is common to add a static method called newInstance() to a fragment class like this:</description>
+    </item>
+    
+  </channel>
+</rss>

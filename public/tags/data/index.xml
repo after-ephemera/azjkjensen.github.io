@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data on jk jensen</title>
+    <link>https://jkjensen.me/tags/data/</link>
+    <description>Recent content in data on jk jensen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2022 09:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Risk and Data Reward</title>
+      <link>https://jkjensen.me/posts/2022-10-05-data-risk-reward/</link>
+      <pubDate>Mon, 21 Nov 2022 09:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2022-10-05-data-risk-reward/</guid>
+      <description>Generative AI tools are making headlines. Society is beginning to see the vast potential of data and the risk that accompanies it. This is healthy! We should dive headfirst into this path while working to measure progress both objectively and subjectively.
+Excuse me for a few minutes while I dump a (mostly) train-of-thought polemic here about data utility and measuring societal progress.
+data is used today for important things. Some would suggest otherwise but for the most important organizations on earth, data is not a competitive advantage.</description>
+    </item>
+    
+  </channel>
+</rss>

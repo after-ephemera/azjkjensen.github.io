@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>networking on jk jensen</title>
+    <link>https://jkjensen.me/categories/networking/</link>
+    <description>Recent content in networking on jk jensen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 May 2018 14:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/categories/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>automating myself out of static IP paywalls</title>
+      <link>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</link>
+      <pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</guid>
+      <description>For a while I had an itch to set up my own home server. Not Plex or Kodi or anything like that. I just wanted a machine that I could access from anywhere and tinker with. I am by no means a network genius though; thus the itch went unscratched. Until now.
+Skip the prose and get to the code via this Github repository{:target=&amp;quot;_blank&amp;quot;}.
+Let&amp;rsquo;s start with a little background.</description>
+    </item>
+    
+  </channel>
+</rss>

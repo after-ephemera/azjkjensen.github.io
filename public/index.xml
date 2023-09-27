@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jk jensen</title>
+    <link>https://jkjensen.me/</link>
+    <description>Recent content on jk jensen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Sep 2023 11:59:11 -0700</lastBuildDate><atom:link href="https://jkjensen.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>about me</title>
+      <link>https://jkjensen.me/about/about/</link>
+      <pubDate>Tue, 19 Sep 2023 11:59:11 -0700</pubDate>
+      
+      <guid>https://jkjensen.me/about/about/</guid>
+      <description>my name is Jk and i build systems.
+this blog the best people i know write. technical skills only get you so far. i have bigger ambitions.
+about me i&amp;rsquo;m currently building production systems at mysten labs.
+i was a production engineer at meta for a few years, working on privacy infrastructure and AR/VR. before that, i was at Arizona State University in meteor studio working on new research in augmented reality security and privacy.</description>
+    </item>
+    
+    <item>
+      <title>Data Risk and Data Reward</title>
+      <link>https://jkjensen.me/posts/2022-10-05-data-risk-reward/</link>
+      <pubDate>Mon, 21 Nov 2022 09:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2022-10-05-data-risk-reward/</guid>
+      <description>Generative AI tools are making headlines. Society is beginning to see the vast potential of data and the risk that accompanies it. This is healthy! We should dive headfirst into this path while working to measure progress both objectively and subjectively.
+Excuse me for a few minutes while I dump a (mostly) train-of-thought polemic here about data utility and measuring societal progress.
+data is used today for important things. Some would suggest otherwise but for the most important organizations on earth, data is not a competitive advantage.</description>
+    </item>
+    
+    <item>
+      <title>what meta does to retain me</title>
+      <link>https://jkjensen.me/posts/2022-02-21-what-meta-does-to-retain-me/</link>
+      <pubDate>Mon, 21 Feb 2022 09:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2022-02-21-what-meta-does-to-retain-me/</guid>
+      <description>(thoughts are my own and not representative of those of my employer)
+Lots of people have described this topic more eloquently than I can. Nothing in this post will merit a NYT article and nothing, really, will be groundbreaking. But a recent blog post by a friend about why he left{:target=&amp;ldquo;blank&amp;rdquo;} gave me pause – why do I stay here instead of finding the next great thing? If my resume is any indication, I&amp;rsquo;m not afraid to jump ship when a big opportunity presents itself; I have wondered time and again if I&amp;rsquo;m flakey or distractable or if I just don&amp;rsquo;t have the grit to stick it out through hard things.</description>
+    </item>
+    
+    <item>
+      <title>interviewing my parents</title>
+      <link>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</link>
+      <pubDate>Sat, 31 Oct 2020 09:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</guid>
+      <description>Every day in the month of May I conducted recorded interviews with my parents. We faced a host of technical difficulties and sometimes I lost several minutes&amp;rsquo; worth of precious recording because of them. Here are some interesting lessons I learned.
+a/v problems abounded I have a new appreciation for people who live code or game on streaming platforms. Getting the audio and video right is tricky.
+The biggest challenge I faced trying to record interviews was making both the interviewer and the interviewee audible through the process.</description>
+    </item>
+    
+    <item>
+      <title>what i learned running 4 miles a day</title>
+      <link>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</link>
+      <pubDate>Thu, 07 May 2020 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</guid>
+      <description>Last month I ran 4 miles a day, 6 days a week. It was greuling some days, but I did a hard thing.
+finding joy in hard things Each aspect of my life has been challenged before, from faith to health to morality to aspiration. After every setback it is easy to see, in retrospect, the difficulty I was faced with. I recognize that my life has been for the most part one full of privilege – I am grateful and undeserving of the life given me.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 5: cryptographic storage</title>
+      <link>https://jkjensen.me/posts/2019-03-05-android-security-pt-5/</link>
+      <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-03-05-android-security-pt-5/</guid>
+      <description>This post is the fifth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2 part 3 part 4
+Skip the prose and get to the code via https://github.com/azjkjensen/android-encryption-starter{:target=&amp;quot;_blank&amp;quot;}
+Cryptography: you know it&amp;rsquo;s good, hope it happens, pray it works. But dealing with sensitive information is a topic that has been rising in popularity in recent years, and it&amp;rsquo;s important to understand how encryption is used.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 6: device security</title>
+      <link>https://jkjensen.me/posts/2019-03-29-android-security-pt-6/</link>
+      <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-03-29-android-security-pt-6/</guid>
+      <description>This post is the sixth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2 part 3 part 4 part 5
+intro In the previous posts in this series we&amp;rsquo;ve discussed a slew of security features on Android, mostly focusing on protecting the user from malicious software.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 3: package management</title>
+      <link>https://jkjensen.me/posts/2019-02-05-android-security-pt-3/</link>
+      <pubDate>Tue, 05 Feb 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-02-05-android-security-pt-3/</guid>
+      <description>This post is the third in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2
+Lately I&amp;rsquo;ve been spending a lot of time seeking to understand Android at a lower level to drive the research I am doing on privacy and security in augmented reality.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 4: network security</title>
+      <link>https://jkjensen.me/posts/2019-02-21-android-security-pt-4/</link>
+      <pubDate>Tue, 05 Feb 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-02-21-android-security-pt-4/</guid>
+      <description>This post is the fourth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1 part 2 part 3
+Network security is an enormous and ever-changing field, but some things have remained effectively constant for a while now. Except for the threat that quantum computing poses to it, high-complexity encryption has consistently been shown to protect sensitive data from prying eyes.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 2: permissions</title>
+      <link>https://jkjensen.me/posts/2019-01-23-android-security-pt-2/</link>
+      <pubDate>Wed, 23 Jan 2019 08:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-01-23-android-security-pt-2/</guid>
+      <description>This post is the second part of a series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. part 1
+Permissions are a fundamental part of any computer system&amp;rsquo;s security model and mobile systems are no exception. We briefly addressed them briefly in the last post on architecture, but here we will go into detail on what permissions are and how they are enforced.</description>
+    </item>
+    
+    <item>
+      <title>mobile security series part 1: the android platform</title>
+      <link>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</link>
+      <pubDate>Mon, 07 Jan 2019 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</guid>
+      <description>This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.
+android architecture In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform.</description>
+    </item>
+    
+    <item>
+      <title>take pride in a conglomeration of work</title>
+      <link>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</link>
+      <pubDate>Thu, 08 Nov 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</guid>
+      <description>The saying goes something like &amp;ldquo;jack of all trades, master of none&amp;rdquo; right?
+There is something to be said about people who dig deep into a single problem and spend their entire life&amp;rsquo;s work focused there. Just look at people like Stephen Hawking{:target=&amp;quot;_blank&amp;quot;}. His life was his craft, and he was and continues to be richly rewarded for persistence and intelligence. Hawking left behind a legacy that is simultaneously unbelievable and inspiring.</description>
+    </item>
+    
+    <item>
+      <title>automating myself out of static IP paywalls</title>
+      <link>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</link>
+      <pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</guid>
+      <description>For a while I had an itch to set up my own home server. Not Plex or Kodi or anything like that. I just wanted a machine that I could access from anywhere and tinker with. I am by no means a network genius though; thus the itch went unscratched. Until now.
+Skip the prose and get to the code via this Github repository{:target=&amp;quot;_blank&amp;quot;}.
+Let&amp;rsquo;s start with a little background.</description>
+    </item>
+    
+    <item>
+      <title>using the NewInstance pattern in kotlin</title>
+      <link>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</link>
+      <pubDate>Thu, 05 Apr 2018 14:25:52 -0500</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</guid>
+      <description>Kotlin has a handful of fundamental differences from Java, not the least of which being the omission of static members and methods. This can cause a bit of a headache when trying to duplicate typical Android patterns using Android’s newest official language{:target=&amp;quot;_blank&amp;quot;}.
+Skip the prose and get to the code via this Github gist{:target=&amp;quot;_blank&amp;quot;}.
+Java Example In Java Android development it is common to add a static method called newInstance() to a fragment class like this:</description>
+    </item>
+    
+  </channel>
+</rss>

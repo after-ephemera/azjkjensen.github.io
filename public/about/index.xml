@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on jk jensen</title>
+    <link>https://jkjensen.me/about/</link>
+    <description>Recent content in Abouts on jk jensen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Sep 2023 11:59:11 -0700</lastBuildDate><atom:link href="https://jkjensen.me/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>about me</title>
+      <link>https://jkjensen.me/about/about/</link>
+      <pubDate>Tue, 19 Sep 2023 11:59:11 -0700</pubDate>
+      
+      <guid>https://jkjensen.me/about/about/</guid>
+      <description>my name is Jk and i build systems.
+this blog the best people i know write. technical skills only get you so far. i have bigger ambitions.
+about me i&amp;rsquo;m currently building production systems at mysten labs.
+i was a production engineer at meta for a few years, working on privacy infrastructure and AR/VR. before that, i was at Arizona State University in meteor studio working on new research in augmented reality security and privacy.</description>
+    </item>
+    
+  </channel>
+</rss>
