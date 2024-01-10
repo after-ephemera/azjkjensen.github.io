@@ -6,7 +6,28 @@
     <description>Recent content on jk jensen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Sep 2023 11:59:11 -0700</lastBuildDate><atom:link href="https://jkjensen.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 05:32:48 -0700</lastBuildDate><atom:link href="https://jkjensen.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Themes</title>
+      <link>https://jkjensen.me/posts/2024-01-10-2024-themes/</link>
+      <pubDate>Wed, 10 Jan 2024 05:32:48 -0700</pubDate>
+      
+      <guid>https://jkjensen.me/posts/2024-01-10-2024-themes/</guid>
+      <description>holistic systems Success in technology is often found by going deep – academics and senior engineers alike spend decades doing hard technical work to become masters of their craft and push the envelope of human knowledge and accomplishment. The deeper you go, the more important your work may be. The other way to go, and maybe the less-traveled path within engineering, is in thinking and solving holistic problems.
+There is often at least one order of magnitude difference between the scope of the holistic engineer’s daily work and that of the deeply technical one.</description>
+    </item>
+    
+    <item>
+      <title>redesign</title>
+      <link>https://jkjensen.me/posts/redesign/</link>
+      <pubDate>Tue, 26 Sep 2023 19:56:46 -0700</pubDate>
+      
+      <guid>https://jkjensen.me/posts/redesign/</guid>
+      <description>redesign I decided to move into the modern age, abandon jekyll (and Ruby for that matter, yuck), and redo my blog on a Hugo site. It was the right move and it was overdue. I despise Ruby and maintaining a Ruby toolchain is a pain on MacOS. So here it is!
+Hopefully I&amp;rsquo;ll integrate some subscription mechanism as well soon.
+Will it inspire me to do more writing? Only time will tell&amp;hellip;</description>
+    </item>
+    
     <item>
       <title>about me</title>
       <link>https://jkjensen.me/about/about/</link>
