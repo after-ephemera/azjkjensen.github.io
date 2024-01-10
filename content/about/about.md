@@ -13,6 +13,8 @@ _my name is Jk and i build systems._
 
 the best people i know write. technical skills only get you so far. i have bigger ambitions.
 
+posts here are usually about the future of technology, building infrastructure systems, and privacy.
+
 ### about me
 
 i'm currently building production systems at <a href="https://mystenlabs.com" target="_blank">mysten labs</a>.
