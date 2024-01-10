@@ -21,7 +21,7 @@ i'm currently building production systems at <a href="https://mystenlabs.com" ta
 
 i was a production engineer at meta for a few years, working on privacy infrastructure and AR/VR. before that, i was at Arizona State University in <a href="http://meteor.ame.asu.edu" target="_blank">meteor studio</a> working on new research in augmented reality security and privacy.
 
-i know software will define much of the future of humanity, and my strongest desire is to leave a legacy my family can be proud of. outside of work i read and bake.
+i know software will define much of the future of humanity, and my strongest desire is to leave a legacy my family can be proud of. outside of work i read and run.
 
 ### reach out
 
