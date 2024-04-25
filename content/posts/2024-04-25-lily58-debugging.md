@@ -1,6 +1,6 @@
 +++
 title = 'lily58 upgrade notes'
-date = 2024-04-25T06:24:34-07:00
+date = 2024-04-25T06:14:34-07:00
 +++
 
 I have been seeing some intermittent keyboard restarts lately from my lily58 so I decided yesterday to update the firmware (circuitpython) and the kmk keyboard software running on it. These are my notes to help remember next time how I navigated it.
