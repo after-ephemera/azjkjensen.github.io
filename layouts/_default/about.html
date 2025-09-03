@@ -6,17 +6,36 @@
   <article class="post {{ .Site.Language.LanguageName }}" id="article">
     <div class="row">
       <div class="col-xs-12">
-        <div class="site-header">
-          {{ partial "header.html" . }}
-        </div>
+        {{ partial "header.html" . }}
         <header class="post-header">
           <h1 class="post-title">{{ .Title }}</h1>
-          {{ $image := resources.Get "images/about.jpg" }}
-          {{ $image := $image.Fit "800x800" }}
-          {{ $image := $image.Filter images.Grayscale }}
-          <div style="text-align: center;">
-            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+          {{ $carouselImages := resources.Match "images/carousel/*" }}
+          {{ if $carouselImages }}
+          <div class="carousel-container">
+            <div class="image-carousel">
+              {{ range $index, $image := $carouselImages }}
+              {{ $processedImage := $image.Fit "1200x1200" }}
+              {{ $processedImage := $processedImage.Filter images.Grayscale }}
+              <img src="{{ $processedImage.RelPermalink }}"
+                   width="{{ $processedImage.Width }}"
+                   height="{{ $processedImage.Height }}"
+                   class="carousel-image {{ if eq $index 0 }}active{{ end }}"
+                   data-index="{{ $index }}"
+                   alt="Carousel image {{ add $index 1 }}">
+              {{ end }}
+            </div>
           </div>
+          {{ else }}
+          <!-- Fallback to original static image if no carousel images exist -->
+          {{ $image := resources.Get "images/about.jpg" }}
+          {{ $image := $image.Fit "1200x1200" }}
+          {{ $image := $image.Filter images.Grayscale }}
+          <div class="carousel-container">
+            <div class="image-carousel">
+              <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="carousel-image active" alt="About image">
+            </div>
+          </div>
+          {{ end }}
           {{ if in .Site.Params.mainSections .Type }}
           <div class="row post-desc">
             <div class="col-xs-6">
@@ -27,11 +46,6 @@
               {{ end }}
             </div>
             <div class="col-xs-6">
-              {{ if .Site.Author.name }}
-              <div class="post-author">
-                <a target="_blank" href="{{ .Site.Author.homepage }}">@{{ .Site.Author.name }}</a>
-              </div>
-              {{ end }}
             </div>
           </div>
           {{ end }}

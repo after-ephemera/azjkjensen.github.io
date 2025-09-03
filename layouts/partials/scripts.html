@@ -1,0 +1,7 @@
+<!-- Scripts -->
+{{ $js := resources.Get "js/lazyload.min.js" }}
+{{ if $js }}
+<script src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+
+<!-- Additional scripts can be added here -->

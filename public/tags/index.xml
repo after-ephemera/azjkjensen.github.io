@@ -2,91 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on jk jensen</title>
-    <link>https://jkjensen.me/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on jk jensen</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Nov 2022 09:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Nov 2022 09:25:52 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>data</title>
-      <link>https://jkjensen.me/tags/data/</link>
+      <title>Data</title>
+      <link>http://localhost:1313/tags/data/</link>
       <pubDate>Mon, 21 Nov 2022 09:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/data/</guid>
+      <guid>http://localhost:1313/tags/data/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>jetty</title>
-      <link>https://jkjensen.me/tags/jetty/</link>
+      <title>Jetty</title>
+      <link>http://localhost:1313/tags/jetty/</link>
       <pubDate>Mon, 21 Nov 2022 09:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/jetty/</guid>
+      <guid>http://localhost:1313/tags/jetty/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>meta</title>
-      <link>https://jkjensen.me/tags/meta/</link>
+      <title>Meta</title>
+      <link>http://localhost:1313/tags/meta/</link>
       <pubDate>Mon, 21 Feb 2022 09:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/meta/</guid>
+      <guid>http://localhost:1313/tags/meta/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>work</title>
-      <link>https://jkjensen.me/tags/work/</link>
+      <title>Work</title>
+      <link>http://localhost:1313/tags/work/</link>
       <pubDate>Mon, 21 Feb 2022 09:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/work/</guid>
+      <guid>http://localhost:1313/tags/work/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>monthly-goals</title>
-      <link>https://jkjensen.me/tags/monthly-goals/</link>
+      <title>Monthly-Goals</title>
+      <link>http://localhost:1313/tags/monthly-goals/</link>
       <pubDate>Sat, 31 Oct 2020 09:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/monthly-goals/</guid>
+      <guid>http://localhost:1313/tags/monthly-goals/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>android</title>
-      <link>https://jkjensen.me/tags/android/</link>
+      <title>Android</title>
+      <link>http://localhost:1313/tags/android/</link>
       <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/android/</guid>
+      <guid>http://localhost:1313/tags/android/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>unity</title>
-      <link>https://jkjensen.me/tags/unity/</link>
+      <title>Unity</title>
+      <link>http://localhost:1313/tags/unity/</link>
       <pubDate>Mon, 07 Jan 2019 14:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/unity/</guid>
+      <guid>http://localhost:1313/tags/unity/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>python</title>
-      <link>https://jkjensen.me/tags/python/</link>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>kotlin</title>
-      <link>https://jkjensen.me/tags/kotlin/</link>
+      <title>Kotlin</title>
+      <link>http://localhost:1313/tags/kotlin/</link>
       <pubDate>Thu, 05 Apr 2018 14:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/tags/kotlin/</guid>
+      <guid>http://localhost:1313/tags/kotlin/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
