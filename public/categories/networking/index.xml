@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>networking on jk jensen</title>
-    <link>https://jkjensen.me/categories/networking/</link>
-    <description>Recent content in networking on jk jensen</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 06 May 2018 14:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/categories/networking/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>automating myself out of static IP paywalls</title>
-      <link>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</link>
-      <pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</guid>
-      <description>For a while I had an itch to set up my own home server. Not Plex or Kodi or anything like that. I just wanted a machine that I could access from anywhere and tinker with. I am by no means a network genius though; thus the itch went unscratched. Until now.
-Skip the prose and get to the code via this Github repository{:target=&amp;quot;_blank&amp;quot;}.
-Let&amp;rsquo;s start with a little background.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Networking on jk jensen</title><link>https://jkjensen.me/categories/networking/</link><description>Recent content in Networking on jk jensen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 06 May 2018 14:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/categories/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>automating myself out of static IP paywalls</title><link>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</link><pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate><guid>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</guid><description>&lt;p&gt;For a while I had an itch to set up my own home server. Not Plex or Kodi or anything like that. I just wanted a machine that I could access from anywhere and tinker with. I am by no means a network genius though; thus the itch went unscratched. Until now.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Skip the prose and get to the code via this &lt;a href="https://github.com/azjkjensen/cruiseshIP"&gt;Github repository&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s start with a little background.&lt;/p&gt;
+&lt;p&gt;Not long ago I volunteered at a meetup called &lt;a href="https://www.meetup.com/Learn-Computer-Programming-DevNano/"&gt;DevNano&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;} in the heart of Silicon Slopes. I got the chance to help people of various ages and from a wide range of backgrounds learn to program from the ground up. It was incredible to see the dedication these people had to learn outside of their regular dayjobs. At one meeting we were discussing how the internet works and one of the instructors touched on dynamic vs. static IP addresses. Having worked in Network Operations for my school during my undergrad I was familiar with the concepts he taught. What I was not familiar with was that dynamic IP addresses aren&amp;rsquo;t really all that dynamic. He said he ran a server from home and he didn&amp;rsquo;t have a static IP address. The only inconvenience was that every few months he would have to adjust anything that pointed to the server. For home projects this is no problem; pet project SLOs are nonexistent so downtime is inconvenient but acceptable.&lt;/p&gt;</description></item></channel></rss>

@@ -1,32 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>monthly-goals on jk jensen</title>
-    <link>https://jkjensen.me/tags/monthly-goals/</link>
-    <description>Recent content in monthly-goals on jk jensen</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2020 09:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/tags/monthly-goals/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>interviewing my parents</title>
-      <link>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</link>
-      <pubDate>Sat, 31 Oct 2020 09:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</guid>
-      <description>Every day in the month of May I conducted recorded interviews with my parents. We faced a host of technical difficulties and sometimes I lost several minutes&amp;rsquo; worth of precious recording because of them. Here are some interesting lessons I learned.
-a/v problems abounded I have a new appreciation for people who live code or game on streaming platforms. Getting the audio and video right is tricky.
-The biggest challenge I faced trying to record interviews was making both the interviewer and the interviewee audible through the process.</description>
-    </item>
-    
-    <item>
-      <title>what i learned running 4 miles a day</title>
-      <link>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</link>
-      <pubDate>Thu, 07 May 2020 14:25:52 -0500</pubDate>
-      
-      <guid>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</guid>
-      <description>Last month I ran 4 miles a day, 6 days a week. It was greuling some days, but I did a hard thing.
-finding joy in hard things Each aspect of my life has been challenged before, from faith to health to morality to aspiration. After every setback it is easy to see, in retrospect, the difficulty I was faced with. I recognize that my life has been for the most part one full of privilege – I am grateful and undeserving of the life given me.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monthly-Goals on jk jensen</title><link>https://jkjensen.me/tags/monthly-goals/</link><description>Recent content in Monthly-Goals on jk jensen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 31 Oct 2020 09:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/tags/monthly-goals/index.xml" rel="self" type="application/rss+xml"/><item><title>interviewing my parents</title><link>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</link><pubDate>Sat, 31 Oct 2020 09:25:52 -0500</pubDate><guid>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</guid><description>&lt;p&gt;Every day in the month of May I conducted recorded interviews with my parents. We faced a host of technical difficulties and sometimes I lost several minutes&amp;rsquo; worth of precious recording because of them. Here are some interesting lessons I learned.&lt;/p&gt;
+&lt;h2 id="av-problems-abounded"&gt;a/v problems abounded&lt;/h2&gt;
+&lt;p&gt;I have a new appreciation for people who live code or game on streaming platforms. Getting the audio and video right is tricky.&lt;/p&gt;
+&lt;p&gt;The biggest challenge I faced trying to record interviews was making both the interviewer &lt;em&gt;and&lt;/em&gt; the interviewee audible through the process. I was using my Macbook Pro to do this, and MacOS doesn&amp;rsquo;t support threading streams together, so I had to install and configure a &lt;a href="https://rogueamoeba.com/freebies/soundflower/"&gt;kernel extension&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;} that would handle it for me.&lt;/p&gt;</description></item><item><title>what i learned running 4 miles a day</title><link>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</link><pubDate>Thu, 07 May 2020 14:25:52 -0500</pubDate><guid>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</guid><description>&lt;p&gt;Last month I ran 4 miles a day, 6 days a week. It was greuling some days, but I did a hard thing.&lt;/p&gt;
+&lt;h2 id="finding-joy-in-hard-things"&gt;finding joy in hard things&lt;/h2&gt;
+&lt;p&gt;Each aspect of my life has been challenged before, from faith to health to morality to aspiration. After every setback it is easy to see, in retrospect, the difficulty I was faced with. I recognize that my life has been for the most part one full of privilege – I am grateful and undeserving of the life given me. My experience, though, has taught me that &lt;em&gt;it is good to be faced with moderate opposition&lt;/em&gt;. Even my closest friends and I hold opposing views.&lt;/p&gt;</description></item></channel></rss>
