@@ -8,7 +8,7 @@ layout = 'about'
 
 _my name is Jk and i build systems._
 
-### this blog
+### this site
 
 The best people I know write.
 
@@ -22,9 +22,9 @@ I have bigger ambitions.
 
 I work at the intersection of emerging technology and software, with an emphasis on infrastructure, privacy, and AR/VR.
 
-I'm currently building production systems at <a href="https://mystenlabs.com" target="_blank">Mysten Labs</a>. I work on <a href="https://blog.sui.io/zklogin-salt-server-architecture/" target="_blank">zklogin</a>, the most widely used zero knowledge system on earth. I also <a href="https://www.youtube.com/watch?v=EQwpC02CQ9k" target="_blank">spoke on some of my work building reliable infrastructure fast at Pulumi Up 2024</a>.
+I'm currently building production systems at <a href="https://mystenlabs.com" target="_blank">Mysten Labs</a>. I work on <a href="https://blog.sui.io/zklogin-salt-server-architecture/" target="_blank">zklogin</a>, the most widely used zero knowledge system on earth. I also <a href="https://www.youtube.com/watch?v=EQwpC02CQ9k" target="_blank">spoke on some of my work building reliable infrastructure fast at Pulumi Up 2024</a>. I created the incident management program that has handled the real-time response, mitigation, and long-term resolution for some <a href="https://www.coindesk.com/tech/2024/11/21/sui-network-back-up-after-scheduling-bug-leads-to-two-hour-downtime-sui-recovers" target="_blank">major</a> <a href="https://www.coindesk.com/business/2025/06/09/sui-s-cetus-dex-is-back-online-after-usd223m-exploit" target="_blank">incidents</a> on the network. People rely on Sui to be resilient and stable, thanks in part to my work.
 
-I was a production engineer at Meta for a few years, working on privacy infrastructure and AR/VR. before that, I was at Arizona State University in <a href="http://meteor.ame.asu.edu" target="_blank">Meteor Studio</a> working on new research in augmented reality security and privacy. I spent my time during school working at various parts of the software stack, from firmware testing to fullstack to mobile.
+I was a production software engineer at Meta for a few years, working on privacy infrastructure and AR/VR. before that, I was at Arizona State University in <a href="http://meteor.ame.asu.edu" target="_blank">Meteor Studio</a> working on new research in augmented reality security and privacy. I spent my time during school working at various parts of the software stack, from firmware testing to fullstack to mobile.
 
 Software will define the future of humanity, and my strongest desire is to leave a legacy of software I built that my family can be proud of.
 
