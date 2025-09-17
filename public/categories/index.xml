@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on jk jensen</title><link>https://jkjensen.me/categories/</link><description>Recent content in Categories on jk jensen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 21 Nov 2022 09:25:52 -0500</lastBuildDate><atom:link href="https://jkjensen.me/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Data</title><link>https://jkjensen.me/categories/data/</link><pubDate>Mon, 21 Nov 2022 09:25:52 -0500</pubDate><guid>https://jkjensen.me/categories/data/</guid><description/></item><item><title>Work</title><link>https://jkjensen.me/categories/work/</link><pubDate>Mon, 21 Feb 2022 09:25:52 -0500</pubDate><guid>https://jkjensen.me/categories/work/</guid><description/></item><item><title>Goals</title><link>https://jkjensen.me/categories/goals/</link><pubDate>Sat, 31 Oct 2020 09:25:52 -0500</pubDate><guid>https://jkjensen.me/categories/goals/</guid><description/></item><item><title>Programming</title><link>https://jkjensen.me/categories/programming/</link><pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate><guid>https://jkjensen.me/categories/programming/</guid><description/></item><item><title>Research</title><link>https://jkjensen.me/categories/research/</link><pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate><guid>https://jkjensen.me/categories/research/</guid><description/></item><item><title>Networking</title><link>https://jkjensen.me/categories/networking/</link><pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate><guid>https://jkjensen.me/categories/networking/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on jk jensen</title>
+    <link>https://jkjensen.me/categories/</link>
+    <description>Recent content in Categories on jk jensen</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2022 09:25:52 -0500</lastBuildDate>
+    <atom:link href="https://jkjensen.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>https://jkjensen.me/categories/data/</link>
+      <pubDate>Mon, 21 Nov 2022 09:25:52 -0500</pubDate>
+      <guid>https://jkjensen.me/categories/data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Work</title>
+      <link>https://jkjensen.me/categories/work/</link>
+      <pubDate>Mon, 21 Feb 2022 09:25:52 -0500</pubDate>
+      <guid>https://jkjensen.me/categories/work/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Goals</title>
+      <link>https://jkjensen.me/categories/goals/</link>
+      <pubDate>Sat, 31 Oct 2020 09:25:52 -0500</pubDate>
+      <guid>https://jkjensen.me/categories/goals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://jkjensen.me/categories/programming/</link>
+      <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
+      <guid>https://jkjensen.me/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research</title>
+      <link>https://jkjensen.me/categories/research/</link>
+      <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
+      <guid>https://jkjensen.me/categories/research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>https://jkjensen.me/categories/networking/</link>
+      <pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate>
+      <guid>https://jkjensen.me/categories/networking/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

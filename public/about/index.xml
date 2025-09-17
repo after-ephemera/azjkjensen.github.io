@@ -1,7 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Abouts on jk jensen</title><link>https://jkjensen.me/about/</link><description>Recent content in Abouts on jk jensen</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 19 Sep 2023 11:59:11 -0700</lastBuildDate><atom:link href="https://jkjensen.me/about/index.xml" rel="self" type="application/rss+xml"/><item><title>about me</title><link>https://jkjensen.me/about/about/</link><pubDate>Tue, 19 Sep 2023 11:59:11 -0700</pubDate><guid>https://jkjensen.me/about/about/</guid><description>&lt;p&gt;&lt;em&gt;my name is Jk and i build systems.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id="this-blog"&gt;this blog&lt;/h3&gt;
-&lt;p&gt;the best people i know write. technical skills only get you so far. i have bigger ambitions.&lt;/p&gt;
-&lt;p&gt;posts here are usually about the future of technology, building infrastructure systems, and privacy.&lt;/p&gt;
-&lt;h3 id="about-me"&gt;about me&lt;/h3&gt;
-&lt;p&gt;i&amp;rsquo;m currently building production systems at &lt;a href="https://mystenlabs.com" target="_blank"&gt;mysten labs&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;i was a production engineer at meta for a few years, working on privacy infrastructure and AR/VR. before that, i was at Arizona State University in &lt;a href="http://meteor.ame.asu.edu" target="_blank"&gt;meteor studio&lt;/a&gt; working on new research in augmented reality security and privacy.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on jk jensen</title>
+    <link>https://jkjensen.me/about/</link>
+    <description>Recent content in Abouts on jk jensen</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Sep 2023 11:59:11 -0700</lastBuildDate>
+    <atom:link href="https://jkjensen.me/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>about me</title>
+      <link>https://jkjensen.me/about/about/</link>
+      <pubDate>Tue, 19 Sep 2023 11:59:11 -0700</pubDate>
+      <guid>https://jkjensen.me/about/about/</guid>
+      <description>&lt;p&gt;&lt;em&gt;my name is Jk and i build systems.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;this-blog&#34;&gt;this blog&lt;/h3&gt;&#xA;&lt;p&gt;the best people i know write. technical skills only get you so far. i have bigger ambitions.&lt;/p&gt;&#xA;&lt;p&gt;posts here are usually about the future of technology, building infrastructure systems, and privacy.&lt;/p&gt;&#xA;&lt;h3 id=&#34;about-me&#34;&gt;about me&lt;/h3&gt;&#xA;&lt;p&gt;i work at the intersection of emerging technology and software, with an emphasis on infrastructure, privacy, and AR/VR.&lt;/p&gt;&#xA;&lt;p&gt;i&amp;rsquo;m currently building production systems at &lt;a href=&#34;https://mystenlabs.com&#34; target=&#34;_blank&#34;&gt;mysten labs&lt;/a&gt;. i work on &lt;a href=&#34;https://blog.sui.io/zklogin-salt-server-architecture/&#34;&gt;zklogin&lt;/a&gt;, the most widely used zero knowledge system on earth. i also &lt;a href=&#34;https://www.youtube.com/watch?v=EQwpC02CQ9k&#34;&gt;spoke on some of my work building reliable infrastructure fast at pulumi up 2024&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
