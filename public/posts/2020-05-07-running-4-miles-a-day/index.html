@@ -210,6 +210,23 @@ finding joy in hard things Each aspect of my life has been challenged before, fr
   
 </script>
 
+<script>
+  
+  function changeImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-alt-src');
+    }
+  }
+  
+  function restoreImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-original-src');
+    }
+  }
+</script>
+
   
 
 </body>

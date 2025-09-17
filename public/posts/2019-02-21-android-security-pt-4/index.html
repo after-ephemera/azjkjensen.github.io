@@ -227,6 +227,23 @@ Network security is an enormous and ever-changing field, but some things have re
   
 </script>
 
+<script>
+  
+  function changeImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-alt-src');
+    }
+  }
+  
+  function restoreImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-original-src');
+    }
+  }
+</script>
+
   
 
 </body>

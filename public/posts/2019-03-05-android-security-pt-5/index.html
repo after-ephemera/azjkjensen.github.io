@@ -247,6 +247,23 @@ Cryptography: you know it’s good, hope it happens, pray it works. But dealing 
   
 </script>
 
+<script>
+  
+  function changeImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-alt-src');
+    }
+  }
+  
+  function restoreImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-original-src');
+    }
+  }
+</script>
+
   
 
 </body>

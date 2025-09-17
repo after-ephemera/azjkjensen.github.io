@@ -251,6 +251,23 @@ The biggest challenge I faced trying to record interviews was making both the in
   
 </script>
 
+<script>
+  
+  function changeImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-alt-src');
+    }
+  }
+  
+  function restoreImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-original-src');
+    }
+  }
+</script>
+
   
 
 </body>

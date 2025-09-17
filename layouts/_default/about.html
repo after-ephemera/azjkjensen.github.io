@@ -14,8 +14,8 @@
           {{ $image := resources.Get "images/about.jpg" }}
           {{ $image := $image.Fit "800x800" }}
           {{ $image := $image.Filter images.Grayscale }}
-          <div style="text-align: center;">
-            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+          <div style="text-align: center; position: relative;">
+            <img id="about-image" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" data-original-src="{{ $image.RelPermalink }}">
           </div>
           {{ if in .Site.Params.mainSections .Type }}
           <div class="row post-desc">

@@ -238,6 +238,23 @@ data is used today for important things. Some would suggest otherwise but for th
   
 </script>
 
+<script>
+  
+  function changeImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-alt-src');
+    }
+  }
+  
+  function restoreImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-original-src');
+    }
+  }
+</script>
+
   
 
 </body>

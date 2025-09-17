@@ -103,8 +103,8 @@
           
           
           
-          <div style="text-align: center;">
-            <img src="/images/about_hu_174bc2c8c58f9fcb.jpg" width="533" height="800">
+          <div style="text-align: center; position: relative;">
+            <img id="about-image" src="/images/about_hu_174bc2c8c58f9fcb.jpg" width="533" height="800" data-original-src="/images/about_hu_174bc2c8c58f9fcb.jpg">
           </div>
           
           <div class="row post-desc">
@@ -189,6 +189,23 @@
     
     
   
+</script>
+
+<script>
+  
+  function changeImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-alt-src');
+    }
+  }
+  
+  function restoreImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-original-src');
+    }
+  }
 </script>
 
   
