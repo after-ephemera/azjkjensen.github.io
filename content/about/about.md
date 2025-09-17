@@ -39,7 +39,7 @@ Software will define the future of humanity, and my strongest desire is to leave
 
 ### favorites
 
-#### works that inform how i live and work
+#### works that inform how I live and work
 
 - <a href="https://archive.org/details/pdfy-2_qp8jQ61OI6NHwa" target="_blank">strunk and white</a>
 - <a href="https://archive.org/details/zenandtheartofmotorcyclemaintenancerobertpirsigm._833_V" target="_blank">zen and the art of motorcycle maintenance</a>
