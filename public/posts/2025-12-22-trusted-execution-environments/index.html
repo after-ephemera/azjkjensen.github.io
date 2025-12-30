@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Hugo 0.153.5">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="" />
+  <meta property="og:url" content="http://localhost:1313/posts/2025-12-22-trusted-execution-environments/" />
+  <link rel="canonical" href="http://localhost:1313/posts/2025-12-22-trusted-execution-environments/" />
+  
+
+  
+
+  <title>Trusted Execution Environments: Beyond the Hype - jk jensen</title>
+  <meta property="og:title" content="Trusted Execution Environments: Beyond the Hype" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en-us" />
+  
+
+  
+  
+    <style>body{font-family:bree serif,sans-serif;-webkit-font-smoothing:antialiased;margin:0 20px}article{max-width:800px;margin-left:auto;margin-right:auto}a{color:#000;text-decoration:none}a:hover{font-weight:600;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:0;padding:0 1em;color:#57606a;border-left:.25em solid #d0d7de}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:#f6f8fa;border-radius:6px}.markdown-body pre>code{padding:0;font-size:100%;background-color:inherit;border:0}.Chinese .markdown-body{line-height:200%}.site-date-catalog{font-size:2rem}.header-title{font-size:2rem;font-weight:700;margin-top:32px;font-family:bungee shade,sans-serif}.header-title a{text-decoration:none}.header-subtitle{color:#666}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:#482936;border-style:solid none none none}.lang-switch{font-weight:600}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:#000 2px solid;border-radius:5px}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:12px}.post-header{margin-bottom:50px}.post-title{font-size:2rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:#000 2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.related-content{border-width:3px;border-style:solid;border-color:#000;padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){.header-title,.header-subtitle,.header-items{text-align:center}.posts-line{font-size:16px}.markdown-body{font-size:16px}.post-title{font-size:2rem}.post-content p{letter-spacing:.05em}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
+  
+  
+    <style>.container,.container-fluid{margin-right:auto;margin-left:auto}.container-fluid{padding-right:2rem;padding-left:2rem}.row{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:initial;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-.5rem;margin-left:-.5rem}.row.reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}.col.reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.col-xs,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-offset-0,.col-xs-offset-1,.col-xs-offset-10,.col-xs-offset-11,.col-xs-offset-12,.col-xs-offset-2,.col-xs-offset-3,.col-xs-offset-4,.col-xs-offset-5,.col-xs-offset-6,.col-xs-offset-7,.col-xs-offset-8,.col-xs-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-xs{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-xs-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-xs-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-xs-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-xs-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-xs-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-xs-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-xs-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-xs-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-xs-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-xs-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-xs-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-xs-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-xs-offset-0{margin-left:0}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-11{margin-left:91.66666667%}.start-xs{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-xs{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-xs{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-xs{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-xs{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-xs{-ms-flex-pack:distribute;justify-content:space-around}.between-xs{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-xs{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-xs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}@media only screen and (min-width:48em){.container{width:49rem}.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-offset-0,.col-sm-offset-1,.col-sm-offset-10,.col-sm-offset-11,.col-sm-offset-12,.col-sm-offset-2,.col-sm-offset-3,.col-sm-offset-4,.col-sm-offset-5,.col-sm-offset-6,.col-sm-offset-7,.col-sm-offset-8,.col-sm-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-sm{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-sm-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-sm-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-sm-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-sm-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-sm-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-sm-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-sm-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-sm-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-sm-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-sm-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-sm-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-sm-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-sm-offset-0{margin-left:0}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-11{margin-left:91.66666667%}.start-sm{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-sm{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-sm{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-sm{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-sm{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-sm{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-sm{-ms-flex-pack:distribute;justify-content:space-around}.between-sm{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-sm{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-sm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:64em){.container{width:65rem}.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-offset-0,.col-md-offset-1,.col-md-offset-10,.col-md-offset-11,.col-md-offset-12,.col-md-offset-2,.col-md-offset-3,.col-md-offset-4,.col-md-offset-5,.col-md-offset-6,.col-md-offset-7,.col-md-offset-8,.col-md-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-md{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-md-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-md-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-md-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-md-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-md-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-md-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-md-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-md-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-md-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-md-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-md-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-md-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-md-offset-0{margin-left:0}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-3{margin-left:25%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-6{margin-left:50%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-9{margin-left:75%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-11{margin-left:91.66666667%}.start-md{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-md{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-md{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-md{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-md{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-md{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-md{-ms-flex-pack:distribute;justify-content:space-around}.between-md{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-md{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-md{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}@media only screen and (min-width:75em){.container{width:76rem}.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-offset-0,.col-lg-offset-1,.col-lg-offset-10,.col-lg-offset-11,.col-lg-offset-12,.col-lg-offset-2,.col-lg-offset-3,.col-lg-offset-4,.col-lg-offset-5,.col-lg-offset-6,.col-lg-offset-7,.col-lg-offset-8,.col-lg-offset-9{box-sizing:border-box;-webkit-box-flex:0;-ms-flex:0 0 auto;flex:none;padding-right:.5rem;padding-left:.5rem}.col-lg{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%}.col-lg-1{-ms-flex-preferred-size:8.33333333%;flex-basis:8.33333333%;max-width:8.33333333%}.col-lg-2{-ms-flex-preferred-size:16.66666667%;flex-basis:16.66666667%;max-width:16.66666667%}.col-lg-3{-ms-flex-preferred-size:25%;flex-basis:25%;max-width:25%}.col-lg-4{-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}.col-lg-5{-ms-flex-preferred-size:41.66666667%;flex-basis:41.66666667%;max-width:41.66666667%}.col-lg-6{-ms-flex-preferred-size:50%;flex-basis:50%;max-width:50%}.col-lg-7{-ms-flex-preferred-size:58.33333333%;flex-basis:58.33333333%;max-width:58.33333333%}.col-lg-8{-ms-flex-preferred-size:66.66666667%;flex-basis:66.66666667%;max-width:66.66666667%}.col-lg-9{-ms-flex-preferred-size:75%;flex-basis:75%;max-width:75%}.col-lg-10{-ms-flex-preferred-size:83.33333333%;flex-basis:83.33333333%;max-width:83.33333333%}.col-lg-11{-ms-flex-preferred-size:91.66666667%;flex-basis:91.66666667%;max-width:91.66666667%}.col-lg-12{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}.col-lg-offset-0{margin-left:0}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-11{margin-left:91.66666667%}.start-lg{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;text-align:start}.center-lg{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}.end-lg{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-align:end}.top-lg{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.middle-lg{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bottom-lg{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}.around-lg{-ms-flex-pack:distribute;justify-content:space-around}.between-lg{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.first-lg{-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}.last-lg{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}}</style>
+  
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Trusted Execution Environments: Beyond the Hype">
+  
+  
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90708894-2"></script>
+  
+</head>
+
+
+
+<body>
+  <article class="post " id="article">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="site-header">
+          <header>
+  <div class="header-title">
+    <a href="/">
+      not kidding
+    </a>
+  </div>
+  <div class="header-subtitle"></div>
+</header>
+<div class="row end-md center-xs header-items">
+  
+  <div class="header-item">
+    <a href="/about">about</a>
+  </div>
+  
+  
+  <div class="header-item">
+    <a href="https://github.com/after-ephemera" target="_blank">github</a>
+  </div>
+  
+</div>
+<div class="row end-xs">
+   
+</div>
+<div class="header-line"></div>
+
+
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">Trusted Execution Environments: Beyond the Hype</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2025-12-22 09:40:00 MST">
+                22 Dec 2025
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>I&rsquo;ve been thinking a lot about Trusted Execution Environments (TEEs) lately. The gap between what they promise and what people actually get from them keeps getting wider, despite increased adoption. There&rsquo;s this weird duality in the space: you&rsquo;ve got teams absolutely struggling to get TEEs working reliably, and then you&rsquo;ve got other teams running critical workloads on systems that are, frankly, incredibly flaky. Neither situation is great.</p>
+<p>So let&rsquo;s talk about what TEEs actually are, why everyone&rsquo;s either excited or frustrated by them, and what it takes to use them properly.</p>
+<h2 id="what-are-trusted-execution-environments">what are trusted execution environments?</h2>
+<p>At their core, TEEs are isolated execution environments within a processor that protect code and data from the rest of the system. Think of them as secure spaces—little fortresses inside your CPU where sensitive computations can happen without fear of being observed or tampered with, even by the operating system or hypervisor.</p>
+<p>The key properties TEEs aim to provide are:</p>
+<ul>
+<li><strong>Isolation</strong>: Your code runs in a protected area separate from the rest of the system</li>
+<li><strong>Integrity</strong>: Nobody can tamper with your code or data while it&rsquo;s executing</li>
+<li><strong>Confidentiality</strong>: The data being processed remains encrypted and invisible to external observers</li>
+<li><strong>Attestation</strong>: You can cryptographically prove what code is running and in what environment</li>
+</ul>
+<p>The most prominent TEE implementations today are Intel SGX (Software Guard Extensions), AMD SEV (Secure Encrypted Virtualization), ARM TrustZone, and AWS Nitro Enclaves. Each has its own quirks, limitations, and use cases. Intel SGX gives you small, highly isolated enclaves. AMD SEV encrypts entire VMs. ARM TrustZone splits the processor into &ldquo;secure&rdquo; and &ldquo;normal&rdquo; worlds. Nitro Enclaves provides AWS-specific isolation with attestation.</p>
+<p>The promise is compelling: you can process sensitive data—medical records, financial information, cryptographic keys—without ever exposing it in plaintext to the host system. In theory, even someone with root access to the machine can&rsquo;t peek at what&rsquo;s happening inside the TEE. But in practice most implementations amount to lip service.</p>
+<h2 id="the-reality-check-current-problems">the reality check: current problems</h2>
+<p>Here&rsquo;s where things get messy.</p>
+<p><strong>First, the mental model is hard.</strong> Most developers are used to thinking about security at the application or OS level. TEEs force you to reason about trust boundaries at the hardware level, and that&rsquo;s a different beast entirely. You have to think about: what goes inside the enclave? What stays outside? How do you get data in and out without compromising security? How do you handle I/O when the TEE can&rsquo;t trust the OS to faithfully deliver network packets or file data?</p>
+<p>These questions don&rsquo;t have obvious answers, and the wrong choices can completely undermine your security model.</p>
+<p><strong>Second, performance is&hellip; complicated.</strong> TEEs come with overhead. Context switching in and out of secure enclaves isn&rsquo;t free. Encrypted memory has performance implications. The more you try to do inside the TEE, the slower things get. Intel SGX in particular has pretty strict memory limits (though this has improved with SGX2), so you end up doing this awkward dance of paging data in and out, which kills performance and opens up side-channel attack vectors.</p>
+<p>I&rsquo;ve seen teams architect beautiful systems on paper only to discover their TEE implementation runs 10x slower than they expected. Then they start making compromises—moving more code outside the enclave, batching operations differently, caching things they shouldn&rsquo;t cache—and suddenly the security properties they were counting on start to erode.</p>
+<p><strong>Third, the tooling is immature.</strong> Debugging code running inside a TEE is painful. You can&rsquo;t just attach a debugger and step through your code like normal because that would violate the whole isolation model. Remote attestation setup is finicky. Key management is complex. You can&rsquo;t even collect logs and metrics without considering the compromises required. The development experience feels like you&rsquo;ve time-traveled back to the 90s.</p>
+<p><strong>Fourth, the threat model is often misunderstood.</strong> TEEs don&rsquo;t magically make everything secure. They protect against specific threats—primarily a malicious or compromised OS/hypervisor. They don&rsquo;t protect against side-channel attacks (Spectre/Meltdown taught us that), physical attacks, or bugs in your own enclave code. If you&rsquo;re not crystal clear about what threats you&rsquo;re actually defending against, you&rsquo;re going to build the wrong thing. They aren&rsquo;t a blanket solution and we shouldn&rsquo;t treat them as such.</p>
+<p>And here&rsquo;s the kicker: a lot of production systems today are running trusted workloads on TEE implementations that have known vulnerabilities, outdated firmware, or misconfigured attestation. It&rsquo;s security theater—all the complexity and performance overhead without the actual security guarantees.</p>
+<h2 id="real-world-implications">real-world implications</h2>
+<p>Why does this matter? Because we&rsquo;re increasingly moving toward a world where computation on sensitive data needs to happen in untrusted environments.</p>
+<p>Consider confidential computing scenarios: a healthcare provider wants to use a cloud service for ML inference on patient data without exposing that data to the cloud provider. Or a financial institution needs to process transactions in a multi-party computation without revealing individual trade details. Or developers want to run code on user devices while preserving user privacy.</p>
+<p>These are not hypothetical scenarios. They&rsquo;re happening now, and TEEs are often the best tool we have for them. Lots of &ldquo;AI companies&rdquo; today are hungry for your information (context is king) but know that you want to feel safe giving it over. But if we&rsquo;re building critical systems on shaky foundations, either because the TEEs are poorly implemented or because we don&rsquo;t understand their capabilities and limitations, we&rsquo;re setting ourselves up for breaches and failures.</p>
+<p>There&rsquo;s also a trust dimension here that goes beyond pure technical security. Attestation is supposed to give users confidence that the code they think is running actually is running. But if the attestation process is opaque or the firmware isn&rsquo;t kept up to date, that trust is misplaced. We&rsquo;re asking users to trust black boxes, and that&rsquo;s not a sustainable position. Anyone who has worked with data center hardware knows that it&rsquo;s just <a href="https://bcantrill.dtrace.org/2019/12/02/the-soul-of-a-new-computer-company/">scary all the way down</a>.</p>
+<p>The flip side is also concerning: teams that could genuinely benefit from TEEs are avoiding them entirely because of the (real and not just perceived) complexity. They&rsquo;re either not building privacy-preserving features at all, or they&rsquo;re using weaker security mechanisms that don&rsquo;t actually provide the guarantees they need, leaving a real mess of a security posture.</p>
+<h2 id="proper-implementation-approaches">proper implementation approaches</h2>
+<p>So what does it take to use TEEs properly? Here&rsquo;s what I&rsquo;ve learned from building on them myself and seeing other teams have varied mileage with them:</p>
+<p><strong>Start with a clear threat model.</strong> Write down explicitly what threats you&rsquo;re defending against. Is it a malicious cloud provider? A compromised OS? A stolen laptop? Different TEEs are better suited for different threats. If you can&rsquo;t articulate the threat, you can&rsquo;t design the defense.</p>
+<p><strong>Keep the TCB (Trusted Computing Base) small.</strong> Everything inside the enclave is part of your attack surface. The smaller and simpler your enclave code, the more confidence you can have in it. I&rsquo;ve seen teams try to shove entire applications into enclaves, and it invariably ends badly. Put only the most sensitive operations inside. Compute-bound operations, access control decisions, data transformations stay, while everything else belongs outside.</p>
+<p><strong>Design for attestation from the start.</strong> Your system should verify that it&rsquo;s talking to a legitimate enclave running the expected code before sending it any sensitive data. This means building in proper attestation flows, managing attestation keys, and having a plan for what happens when attestation fails. I can only assume most systems built on TEEs don&rsquo;t do this.</p>
+<p><strong>Stay updated on vulnerabilities.</strong> The TEE landscape moves fast. New vulnerabilities are discovered, firmware updates are released, new mitigations are developed. You need a process for tracking these and updating your systems. Running on outdated TEE firmware is worse than not using TEEs at all because you have the performance overhead without the security. This is admittedly probably not what a &ldquo;normal&rdquo; engineer wants to be doing day in and day out.</p>
+<p><strong>Invest in tooling.</strong> Yes, the ecosystem is immature, but it&rsquo;s getting better. For SGX, there&rsquo;s <a href="https://gramine.readthedocs.io/">Gramine</a> and <a href="https://occlum.io/">Occlum</a> that can help you run unmodified applications. For debugging, tools like <a href="https://github.com/jovanbulck/sgx-step">SGX-Step</a> can help (though carefully—they&rsquo;re research tools). Nitro Enclaves are far, far&hellip; far worse. Build abstractions that make working with TEEs easier for your team or risk burnout on operationality.</p>
+<p><strong>Have a fallback plan.</strong> TEEs will fail. Attestation will break. Firmware will have bugs. Your system needs to degrade gracefully when this happens. What&rsquo;s your backup security mechanism? How do you detect when TEE protections aren&rsquo;t working as expected?</p>
+<p><strong>Consider alternatives.</strong> Sometimes TEEs aren&rsquo;t the right answer. Homomorphic encryption, secure multi-party computation, differential privacy, zero-knowledge proofs as all available in the privacy-preserving computation toolkit. Don&rsquo;t reach for TEEs just because you know them. Each approach has different tradeoffs in terms of performance, security guarantees, and implementation complexity.</p>
+<h2 id="the-future-outlook">the future outlook</h2>
+<p>I&rsquo;m cautiously optimistic about where TEEs are heading and specifically excited for abstractions like Turnkey&rsquo;s <a href="https://www.turnkey.com/turnkey-verifiable-cloud">verifiable cloud</a> offering. Nobody knows TEEs like them and they have the technical chops to pull it off.</p>
+<p>The hardware is getting better. Intel&rsquo;s SGX2 addressed some of the memory limitations. AMD&rsquo;s SEV-SNP adds memory integrity checking. ARM&rsquo;s Confidential Compute Architecture is maturing. Apple&rsquo;s Secure Enclave has shown what&rsquo;s possible when a company vertically integrates hardware, firmware, and software. AWS, Google, and Azure are all investing heavily in confidential computing infrastructure.</p>
+<p>The standards are improving too. The <a href="https://confidentialcomputing.io/">Confidential Computing Consortium</a> is working on interoperability and best practices. We&rsquo;re starting to see frameworks that abstract away some of the hardware-specific details, making it easier to write portable code.</p>
+<p>But we need to be realistic about the timeline. TEEs won&rsquo;t be trivial to use anytime soon. The fundamental tension between security, performance, and usability isn&rsquo;t going away. What we can do is get better at making informed tradeoffs.</p>
+<p>The most interesting work right now is happening at the intersection of TEEs and other technologies. Using TEEs to bootstrap trust in distributed systems. Combining TEEs with blockchain for trustless computation. Using attestation to enable new kinds of privacy-preserving applications. The building blocks are there; we&rsquo;re still figuring out what to build with them. Eventually, one can only hope that they&rsquo;ll be standard for private workloads and a simple flag-activation away when deploying software.</p>
+<h2 id="where-we-go-from-here">where we go from here</h2>
+<p>If you&rsquo;re considering using TEEs, my advice is: start small, validate your threat model, and be prepared to invest in understanding the technology and staying up to date with it. Don&rsquo;t treat TEEs as a magic bullet. They&rsquo;re a tool—a powerful one, but one that requires skill to wield effectively.</p>
+<p>If you&rsquo;re already using TEEs, audit your implementation. Are you keeping firmware updated? Is your attestation process solid? Are you monitoring for failures? Have you validated that your performance is acceptable? Are the gaps you previously considered admissible still admissible? The gap between a well-implemented TEE system and a poorly-implemented one is enormous.</p>
+<p>And if you&rsquo;re building the future of confidential computing—whether at a cloud provider, a chip manufacturer, or a startup—please, <em>please</em> focus on usability. The cryptographic primitives work. The hardware works (mostly). What we need now is better abstractions, better tooling, better documentation, and clearer guidance on when and how to use these technologies. They are one of the real hopes for true, enforceable privacy (and certainly better than the stageplay of an attempt at privacy recent regulation has been).</p>
+<p>The promise of TEEs is real. We just need to be honest about the current limitations and disciplined about proper implementation. The stakes are too high to do otherwise.</p>
+<hr>
+<p>Some resources I&rsquo;ve found helpful:</p>
+<ul>
+<li><a href="https://eprint.iacr.org/2016/086.pdf">Intel SGX Explained</a> - Dense but comprehensive</li>
+<li><a href="https://confidentialcomputing.io/">Confidential Computing Consortium</a> - Good starting point for standards</li>
+<li><a href="https://eprint.iacr.org/2016/204.pdf">A Memory Encryption Engine Suitable for General Purpose Processors</a> - AMD SEV technical details</li>
+<li><a href="https://keystone-enclave.org/">Keystone: An Open Framework for Architecting TEEs</a> - Research on customizable TEEs</li>
+<li><a href="https://blog.trailofbits.com/">Trail of Bits&rsquo; SGX Security Guidance</a> - Practical security advice</li>
+</ul>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+          <div class="post-comments">
+            
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = "http:\/\/localhost:1313\/posts\/2025-12-22-trusted-execution-environments\/";
+    this.page.identifier = "\/posts\/2025-12-22-trusted-execution-environments\/";
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jkjensen.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+          </div>
+          
+        
+
+        <div class="site-footer">
+  
+  <span class="site-footer-item">
+    <a href="https://github.com/after-ephemera" target="_blank">github</a>
+  </span>
+  
+</div>
+
+
+      </div>
+    </div>
+  </article>
+
+  <script>
+  
+  function changeImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-alt-src');
+    }
+  }
+  
+  function restoreImage() {
+    const img = document.getElementById('about-image');
+    if (img) {
+      img.src = img.getAttribute('data-original-src');
+    }
+  }
+</script>
+
+
+  
+
+</body>
+
+</html>

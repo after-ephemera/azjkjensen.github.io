@@ -1,52 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.149.0">
+  <meta name="generator" content="Hugo 0.153.5">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://jkjensen.me/posts/2019-01-14-android-security-pt-1/" />
-  <link rel="canonical" href="https://jkjensen.me/posts/2019-01-14-android-security-pt-1/" /><link rel="alternate" type="application/atom+xml" href="https://jkjensen.me/index.xml" title="jk jensen">
-
-  <script type="application/ld+json">
-  {
-      "@context" : "http://schema.org",
-      "@type" : "BlogPosting",
-      "mainEntityOfPage": {
-           "@type": "WebPage",
-           "@id": "https:\/\/jkjensen.me\/"
-      },
-      "articleSection" : "posts",
-      "name" : "mobile security series part 1: the android platform",
-      "headline" : "mobile security series part 1: the android platform",
-      "description" : "This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.\nandroid architecture In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform. The diagram below shows the architecture of Android, with the lowest level components at the bottom.\n",
-      "inLanguage" : "en-US",
-      "author" : "",
-      "creator" : "",
-      "publisher": "",
-      "accountablePerson" : "",
-      "copyrightHolder" : "",
-      "copyrightYear" : "2019",
-      "datePublished": "2019-01-07 14:25:52 -0500 -0500",
-      "dateModified" : "2019-01-07 14:25:52 -0500 -0500",
-      "url" : "https:\/\/jkjensen.me\/posts\/2019-01-14-android-security-pt-1\/",
-      "keywords" : [ "unity","android", ]
-  }
-</script>
-<title>mobile security series part 1: the android platform</title>
-  <meta property="og:title" content="mobile security series part 1: the android platform" />
-  <meta property="og:type" content="article" />
-  <meta property="og:description" content="This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.
-android architecture In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform. The diagram below shows the architecture of Android, with the lowest level components at the bottom.
-" />
-  <meta name="description" content="This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.
-android architecture In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform. The diagram below shows the architecture of Android, with the lowest level components at the bottom.
-" />
-  <meta property="og:locale" content="en-us" /><meta property="og:image" content="" />
+  <meta property="og:url" content="http://localhost:1313/posts/2019-01-14-android-security-pt-1/" />
+  <link rel="canonical" href="http://localhost:1313/posts/2019-01-14-android-security-pt-1/" />
   
 
+  
+
+  <title>mobile security series part 1: the android platform - jk jensen</title>
+  <meta property="og:title" content="mobile security series part 1: the android platform" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en-us" />
+  
+
+  
   
     <style>body{font-family:bree serif,sans-serif;-webkit-font-smoothing:antialiased;margin:0 20px}article{max-width:800px;margin-left:auto;margin-right:auto}a{color:#000;text-decoration:none}a:hover{font-weight:600;text-decoration:underline}.post-ads{margin:50px 0}.markdown-body{font-size:18px;max-width:100%}.markdown-body a{text-decoration:underline;text-decoration-color:#000}.markdown-body blockquote{margin:0;padding:0 1em;color:#57606a;border-left:.25em solid #d0d7de}.markdown-body pre{padding:16px;overflow:auto;border-radius:10px}.markdown-body code{padding:.2em .4em;font-size:85%;background-color:#f6f8fa;border-radius:6px}.markdown-body pre>code{padding:0;font-size:100%;background-color:inherit;border:0}.Chinese .markdown-body{line-height:200%}.site-date-catalog{font-size:2rem}.header-title{font-size:2rem;font-weight:700;margin-top:32px;font-family:bungee shade,sans-serif}.header-title a{text-decoration:none}.header-subtitle{color:#666}.header-items{margin:10px 0}.header-item{margin:0 5px}.header-line{width:100%;border-width:2px;border-color:#482936;border-style:solid none none none}.lang-switch{font-weight:600}#posts-list{min-height:600px}.posts-line{font-size:1.2rem;margin:12px 0}.posts-categories{font-size:.8rem;margin:auto;text-align:center}.posts-category{padding:3px 0;border:#000 2px solid;border-radius:5px}.site-footer{margin-top:50px}.site-footer-item{margin-right:12px}.post-content img{max-width:100%;display:block;margin-right:auto;margin-top:12px}.post-header{margin-bottom:50px}.post-title{font-size:2rem;font-weight:600}.post-tags{display:inline;font-weight:600;padding:2px 5px;margin-right:6px;border:#000 2px solid;border-radius:5px}.post-date{font-weight:800;font-style:italic}.post-author{float:right;font-weight:600}.page-content{min-height:60%}.post-content{margin-bottom:50px}.post-content p{hyphens:auto;line-height:1.8;text-justify:ideographic;margin-bottom:1em}.related-content{border-width:3px;border-style:solid;border-color:#000;padding:0 10px;margin-bottom:50px;margin-top:100px}.related-content li{margin:5px 0}.taxonomy-term{font-size:3rem}.gallery-img{text-align:center}.gallery-img span{text-align:center}.gallery-img-desc{font-size:.8em;font-weight:800}#disqus_thread{position:relative}#disqus_thread:after{content:"";display:block;height:55px;width:100%;position:absolute;bottom:0;background:#fff}@media screen and (max-width:600px){.header-title,.header-subtitle,.header-items{text-align:center}.posts-line{font-size:16px}.markdown-body{font-size:16px}.post-title{font-size:2rem}.post-content p{letter-spacing:.05em}}@media screen and (max-width:48em){.posts-category{display:none}}</style>
   
@@ -55,23 +28,20 @@ android architecture In order to understand mobile security one must become fami
   
 
   
-
-  <link href="/index.xml" rel="alternate" type="application/rss+xml"
-    title="jk jensen">
-  
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
-  
-  
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="mobile security series part 1: the android platform">
-  <meta name="twitter:description" content="This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.
-android architecture In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform. The diagram below shows the architecture of Android, with the lowest level components at the bottom.">
+  
+  
 
+  
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90708894-2"></script>
+  
 </head>
+
 
 
 <body>
@@ -79,19 +49,20 @@ android architecture In order to understand mobile security one must become fami
     <div class="row">
       <div class="col-xs-12">
         <div class="site-header">
-          
-<header>
+          <header>
   <div class="header-title">
-    <a href="/"
-      >not kidding</a
-    >
+    <a href="/">
+      not kidding
+    </a>
   </div>
   <div class="header-subtitle"></div>
 </header>
 <div class="row end-md center-xs header-items">
+  
   <div class="header-item">
-    <a href="/about/about" >about</a>
+    <a href="/about">about</a>
   </div>
+  
   
   <div class="header-item">
     <a href="https://github.com/after-ephemera" target="_blank">github</a>
@@ -102,6 +73,7 @@ android architecture In order to understand mobile security one must become fami
    
 </div>
 <div class="header-line"></div>
+
 
         </div>
         <header class="post-header">
@@ -176,7 +148,7 @@ System apps are intended to be permanent and can&rsquo;t be uninstalled by the u
           
 
 <div class="related-content">
-  <h3>Related Posts</h3>
+  <h3>Related Content</h3>
   <ul>
     
     <li><a href="/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/">take pride in a conglomeration of work</a></li>
@@ -188,30 +160,29 @@ System apps are intended to be permanent and can&rsquo;t be uninstalled by the u
 
 
 
+
           
           
           <div style="height: 50px;"></div>
           
           <div class="post-comments">
-            <div id="disqus_thread"></div>
+            
+<div id="disqus_thread"></div>
 <script>
-  window.addEventListener("load", () => {
-    (function() {
-      
-      var d = document,
-        s = d.createElement("script");
-      s.src = "https://jkjensen.disqus.com/embed.js";
-      s.setAttribute("data-timestamp", +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  });
+  var disqus_config = function () {
+    this.page.url = "http:\/\/localhost:1313\/posts\/2019-01-14-android-security-pt-1\/";
+    this.page.identifier = "\/posts\/2019-01-14-android-security-pt-1\/";
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jkjensen.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
 </script>
-<noscript
-  >Please enable JavaScript to view the
-  <a href="https://disqus.com/?ref_noscript"
-    >comments powered by Disqus.</a
-  ></noscript
->
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
 
           </div>
           
@@ -219,24 +190,18 @@ System apps are intended to be permanent and can&rsquo;t be uninstalled by the u
 
         <div class="site-footer">
   
+  <span class="site-footer-item">
+    <a href="https://github.com/after-ephemera" target="_blank">github</a>
+  </span>
   
 </div>
+
 
       </div>
     </div>
   </article>
 
-  
-
-<script>
-  
-  
-    
-    
-  
-</script>
-
-<script>
+  <script>
   
   function changeImage() {
     const img = document.getElementById('about-image');
@@ -252,6 +217,7 @@ System apps are intended to be permanent and can&rsquo;t be uninstalled by the u
     }
   }
 </script>
+
 
   
 

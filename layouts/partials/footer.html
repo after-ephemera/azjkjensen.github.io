@@ -1,0 +1,8 @@
+<div class="site-footer">
+  {{ range .Site.Params.socials }}
+  <span class="site-footer-item">
+    <a href="{{ .link }}" {{ if strings.HasPrefix .link "http" }}target="_blank"{{ end }}>{{ .name }}</a>
+  </span>
+  {{ end }}
+</div>
+

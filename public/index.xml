@@ -2,129 +2,136 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jk jensen</title>
-    <link>https://jkjensen.me/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on jk jensen</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Apr 2024 06:14:34 -0700</lastBuildDate>
-    <atom:link href="https://jkjensen.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Dec 2025 00:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI-Era Developer Metrics</title>
+      <link>http://localhost:1313/posts/2025-12-30-ai-era-developer-metrics/</link>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/2025-12-30-ai-era-developer-metrics/</guid>
+      <description>&lt;p&gt;For a decade, the DORA metrics were our North Star. They gave us a standardized way to measure the performance of software delivery teams: Deployment Frequency, Lead Time for Changes, Change Failure Rate, and Mean Time to Recovery.&lt;/p&gt;&#xA;&lt;p&gt;But the 2025 landscape looks different. With &amp;gt;90% of developers now using AI-assisted coding tools, our traditional metrics are starting to break.&lt;/p&gt;&#xA;&lt;p&gt;The core issue is that DORA was designed for a world where code was expensive to write. In that world, the volume of code was a decent proxy for the volume of effort. Today, code is cheap. When an LLM can generate a significant pull request in seconds, the &amp;ldquo;writing&amp;rdquo; phase of development has essentially collapsed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trusted Execution Environments: Beyond the Hype</title>
+      <link>http://localhost:1313/posts/2025-12-22-trusted-execution-environments/</link>
+      <pubDate>Mon, 22 Dec 2025 09:40:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/2025-12-22-trusted-execution-environments/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been thinking a lot about Trusted Execution Environments (TEEs) lately. The gap between what they promise and what people actually get from them keeps getting wider, despite increased adoption. There&amp;rsquo;s this weird duality in the space: you&amp;rsquo;ve got teams absolutely struggling to get TEEs working reliably, and then you&amp;rsquo;ve got other teams running critical workloads on systems that are, frankly, incredibly flaky. Neither situation is great.&lt;/p&gt;&#xA;&lt;p&gt;So let&amp;rsquo;s talk about what TEEs actually are, why everyone&amp;rsquo;s either excited or frustrated by them, and what it takes to use them properly.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>lily58 upgrade notes</title>
-      <link>https://jkjensen.me/posts/2024-04-25-lily58-debugging/</link>
+      <link>http://localhost:1313/posts/2024-04-25-lily58-debugging/</link>
       <pubDate>Thu, 25 Apr 2024 06:14:34 -0700</pubDate>
-      <guid>https://jkjensen.me/posts/2024-04-25-lily58-debugging/</guid>
+      <guid>http://localhost:1313/posts/2024-04-25-lily58-debugging/</guid>
       <description>&lt;p&gt;I have been seeing some intermittent keyboard restarts lately from my lily58 so I decided yesterday to update the firmware (circuitpython) and the kmk keyboard software running on it. These are my notes to help remember next time how I navigated it.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;To get the keyboard into boot mode, tap the reset button twice. It should come up as a different drive (not the LULUL/LULUR ones) called something like &lt;code&gt;RPI-RP2&lt;/code&gt;.&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>2024 Themes</title>
-      <link>https://jkjensen.me/posts/2024-01-10-2024-themes/</link>
+      <link>http://localhost:1313/posts/2024-01-10-2024-themes/</link>
       <pubDate>Wed, 10 Jan 2024 05:32:48 -0700</pubDate>
-      <guid>https://jkjensen.me/posts/2024-01-10-2024-themes/</guid>
+      <guid>http://localhost:1313/posts/2024-01-10-2024-themes/</guid>
       <description>&lt;h2 id=&#34;holistic-systems&#34;&gt;holistic systems&lt;/h2&gt;&#xA;&lt;p&gt;Success in technology is often found by going deep – academics and senior engineers alike spend decades doing hard technical work to become masters of their craft and push the envelope of human knowledge and accomplishment. The deeper you go, the more important your work may be. The other way to go, and maybe the less-traveled path within engineering, is in thinking and solving holistic problems.&lt;/p&gt;&#xA;&lt;p&gt;There is often at least one order of magnitude difference between the scope of the holistic engineer’s daily work and that of the deeply technical one. The latter dwells on tire pressure, tube materials, and friction coefficients. The former is focused on getting the entire bike moving. Both are critical, even though the holistic contribution may be at times less concretely visible. I choose to focus on work that is more holistic in nature, aware that the tradeoffs are many and sometimes depth is still necessary.&lt;/p&gt;</description>
     </item>
     <item>
       <title>redesign</title>
-      <link>https://jkjensen.me/posts/redesign/</link>
+      <link>http://localhost:1313/posts/redesign/</link>
       <pubDate>Tue, 26 Sep 2023 19:56:46 -0700</pubDate>
-      <guid>https://jkjensen.me/posts/redesign/</guid>
+      <guid>http://localhost:1313/posts/redesign/</guid>
       <description>&lt;h1 id=&#34;redesign&#34;&gt;redesign&lt;/h1&gt;&#xA;&lt;p&gt;I decided to move into the modern age, abandon &lt;a href=&#34;https://jekyllrb.com/&#34;&gt;jekyll&lt;/a&gt; (and Ruby for that matter, yuck), and redo my blog on a &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; site. It was the right move and it was overdue. I despise Ruby and maintaining a Ruby toolchain is a pain on MacOS. So here it is!&lt;/p&gt;&#xA;&lt;p&gt;Hopefully I&amp;rsquo;ll integrate some subscription mechanism as well soon.&lt;/p&gt;&#xA;&lt;p&gt;Will it inspire me to do more writing? Only time will tell&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>about me</title>
-      <link>https://jkjensen.me/about/about/</link>
-      <pubDate>Tue, 19 Sep 2023 11:59:11 -0700</pubDate>
-      <guid>https://jkjensen.me/about/about/</guid>
-      <description>&lt;p&gt;&lt;em&gt;my name is Jk and i build systems.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;this-site&#34;&gt;this site&lt;/h3&gt;&#xA;&lt;p&gt;The best people I know write.&lt;/p&gt;&#xA;&lt;p&gt;Technical skills only get you so far.&lt;/p&gt;&#xA;&lt;p&gt;I have bigger ambitions.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ndash; Posts are usually about the future of technology, building infrastructure systems, and privacy &amp;ndash;&lt;/p&gt;&#xA;&lt;h3 id=&#34;about-me&#34;&gt;about me&lt;/h3&gt;&#xA;&lt;p&gt;I work at the intersection of emerging technology and software, with an emphasis on infrastructure, privacy, and AR/VR.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;m currently building production systems at &lt;a href=&#34;https://mystenlabs.com&#34; target=&#34;_blank&#34;&gt;Mysten Labs&lt;/a&gt;. I work on &lt;a href=&#34;https://blog.sui.io/zklogin-salt-server-architecture/&#34; target=&#34;_blank&#34;&gt;zklogin&lt;/a&gt;, the most widely used zero knowledge system on earth. I also &lt;a href=&#34;https://www.youtube.com/watch?v=EQwpC02CQ9k&#34; target=&#34;_blank&#34;&gt;spoke on some of my work building reliable infrastructure fast at Pulumi Up 2024&lt;/a&gt;. I created the incident management program that has handled the real-time response, mitigation, and long-term resolution for some &lt;a href=&#34;https://www.coindesk.com/tech/2024/11/21/sui-network-back-up-after-scheduling-bug-leads-to-two-hour-downtime-sui-recovers&#34; target=&#34;_blank&#34;&gt;major&lt;/a&gt; &lt;a href=&#34;https://www.coindesk.com/business/2025/06/09/sui-s-cetus-dex-is-back-online-after-usd223m-exploit&#34; target=&#34;_blank&#34;&gt;incidents&lt;/a&gt; on the network. People rely on Sui to be resilient and stable, thanks in part to my work.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Data Risk and Data Reward</title>
-      <link>https://jkjensen.me/posts/2022-10-05-data-risk-reward/</link>
+      <link>http://localhost:1313/posts/2022-10-05-data-risk-reward/</link>
       <pubDate>Mon, 21 Nov 2022 09:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2022-10-05-data-risk-reward/</guid>
+      <guid>http://localhost:1313/posts/2022-10-05-data-risk-reward/</guid>
       <description>&lt;p&gt;Generative AI tools are making headlines. Society is beginning to see the vast potential of data and the risk that accompanies it. This is healthy! We should dive headfirst into this path while working to measure progress both objectively and subjectively.&lt;/p&gt;&#xA;&lt;p&gt;Excuse me for a few minutes while I dump a (mostly) train-of-thought polemic here about data utility and measuring societal progress.&lt;/p&gt;&#xA;&lt;h2 id=&#34;data-is-used-today-for-important-things&#34;&gt;&lt;strong&gt;data is used today for important things.&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Some would suggest otherwise but for the most important organizations on earth, data is not a competitive advantage. It is &lt;em&gt;the&lt;/em&gt; competitive advantage (sorry &lt;a href=&#34;https://benn.substack.com/p/do-data-driven-companies-win&#34;&gt;@bennstancil&lt;/a&gt;). Collecting, operating on, and making inference from data yields an understanding of people more broad-reaching and comprehensive than our brains are accustomed to. I’m going to coin a term because this is the internet and you can do things like that – I call it &lt;strong&gt;The Hark Paradox.&lt;/strong&gt; The paradox is that people positively assert the impossibility of internet companies listening to their everyday conversations and producing advertising insights from them. To me it is clear evidence of the mismatch between expectation and reality. Evidence to the contrary pointing to battery life or microphone sensitivity or recency bias don’t convince people that they’re not being spied on. We can’t explain it, so we attribute it to magic. Speaking of which…&lt;/p&gt;</description>
     </item>
     <item>
       <title>what meta does to retain me</title>
-      <link>https://jkjensen.me/posts/2022-02-21-what-meta-does-to-retain-me/</link>
+      <link>http://localhost:1313/posts/2022-02-21-what-meta-does-to-retain-me/</link>
       <pubDate>Mon, 21 Feb 2022 09:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2022-02-21-what-meta-does-to-retain-me/</guid>
+      <guid>http://localhost:1313/posts/2022-02-21-what-meta-does-to-retain-me/</guid>
       <description>&lt;p&gt;(thoughts are my own and not representative of those of my employer)&lt;/p&gt;&#xA;&lt;p&gt;Lots of people have described this topic more eloquently than I can. Nothing in this post will merit a NYT article and nothing, really, will be groundbreaking. But a recent blog post by a friend about &lt;a href=&#34;https://chalcidfly.repl.co/posts/retain/&#34;&gt;why he left&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;} gave me pause – why do I stay here instead of finding the next great thing? If my resume is any indication, I&amp;rsquo;m not afraid to jump ship when a big opportunity presents itself; I have wondered time and again if I&amp;rsquo;m flakey or distractable or if I just don&amp;rsquo;t have the grit to stick it out through hard things. But here I am three years later and still enamored with my work.&lt;/p&gt;</description>
     </item>
     <item>
       <title>interviewing my parents</title>
-      <link>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</link>
+      <link>http://localhost:1313/posts/2020-10-31-interviewing-my-parents/</link>
       <pubDate>Sat, 31 Oct 2020 09:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2020-10-31-interviewing-my-parents/</guid>
+      <guid>http://localhost:1313/posts/2020-10-31-interviewing-my-parents/</guid>
       <description>&lt;p&gt;Every day in the month of May I conducted recorded interviews with my parents. We faced a host of technical difficulties and sometimes I lost several minutes&amp;rsquo; worth of precious recording because of them. Here are some interesting lessons I learned.&lt;/p&gt;&#xA;&lt;h2 id=&#34;av-problems-abounded&#34;&gt;a/v problems abounded&lt;/h2&gt;&#xA;&lt;p&gt;I have a new appreciation for people who live code or game on streaming platforms. Getting the audio and video right is tricky.&lt;/p&gt;&#xA;&lt;p&gt;The biggest challenge I faced trying to record interviews was making both the interviewer &lt;em&gt;and&lt;/em&gt; the interviewee audible through the process. I was using my Macbook Pro to do this, and MacOS doesn&amp;rsquo;t support threading streams together, so I had to install and configure a &lt;a href=&#34;https://rogueamoeba.com/freebies/soundflower/&#34;&gt;kernel extension&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;} that would handle it for me.&lt;/p&gt;</description>
     </item>
     <item>
       <title>what i learned running 4 miles a day</title>
-      <link>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</link>
+      <link>http://localhost:1313/posts/2020-05-07-running-4-miles-a-day/</link>
       <pubDate>Thu, 07 May 2020 14:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2020-05-07-running-4-miles-a-day/</guid>
+      <guid>http://localhost:1313/posts/2020-05-07-running-4-miles-a-day/</guid>
       <description>&lt;p&gt;Last month I ran 4 miles a day, 6 days a week. It was greuling some days, but I did a hard thing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;finding-joy-in-hard-things&#34;&gt;finding joy in hard things&lt;/h2&gt;&#xA;&lt;p&gt;Each aspect of my life has been challenged before, from faith to health to morality to aspiration. After every setback it is easy to see, in retrospect, the difficulty I was faced with. I recognize that my life has been for the most part one full of privilege – I am grateful and undeserving of the life given me. My experience, though, has taught me that &lt;em&gt;it is good to be faced with moderate opposition&lt;/em&gt;. Even my closest friends and I hold opposing views.&lt;/p&gt;</description>
     </item>
     <item>
       <title>mobile security series part 5: cryptographic storage</title>
-      <link>https://jkjensen.me/posts/2019-03-05-android-security-pt-5/</link>
+      <link>http://localhost:1313/posts/2019-03-05-android-security-pt-5/</link>
       <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2019-03-05-android-security-pt-5/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This post is the fifth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;https://jkjensen.me/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-2&#34;&gt;part 2&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-3&#34;&gt;part 3&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-4&#34;&gt;part 4&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Skip the prose and get to the code via &lt;a href=&#34;https://github.com/azjkjensen/android-encryption-starter&#34;&gt;https://github.com/azjkjensen/android-encryption-starter&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cryptography: you know it&amp;rsquo;s good, hope it happens, pray it works. But dealing with sensitive information is a topic that has been rising in popularity in recent years, and it&amp;rsquo;s important to understand how encryption is used. As we review cryptographic storage in this post, we&amp;rsquo;ll discuss app implementation specifics and end with a full example app that I have open-sourced to help you get started. There just aren&amp;rsquo;t enough resources out there for how to implement data encryption on Android.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2019-03-05-android-security-pt-5/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This post is the fifth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;http://localhost:1313/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-2&#34;&gt;part 2&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-3&#34;&gt;part 3&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-4&#34;&gt;part 4&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Skip the prose and get to the code via &lt;a href=&#34;https://github.com/azjkjensen/android-encryption-starter&#34;&gt;https://github.com/azjkjensen/android-encryption-starter&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cryptography: you know it&amp;rsquo;s good, hope it happens, pray it works. But dealing with sensitive information is a topic that has been rising in popularity in recent years, and it&amp;rsquo;s important to understand how encryption is used. As we review cryptographic storage in this post, we&amp;rsquo;ll discuss app implementation specifics and end with a full example app that I have open-sourced to help you get started. There just aren&amp;rsquo;t enough resources out there for how to implement data encryption on Android.&lt;/p&gt;</description>
     </item>
     <item>
       <title>mobile security series part 6: device security</title>
-      <link>https://jkjensen.me/posts/2019-03-29-android-security-pt-6/</link>
+      <link>http://localhost:1313/posts/2019-03-29-android-security-pt-6/</link>
       <pubDate>Tue, 05 Mar 2019 08:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2019-03-29-android-security-pt-6/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This post is the sixth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;https://jkjensen.me/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-2&#34;&gt;part 2&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-3&#34;&gt;part 3&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-4&#34;&gt;part 4&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-5&#34;&gt;part 5&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;intro&#34;&gt;intro&lt;/h3&gt;&#xA;&lt;p&gt;In the previous posts in this series we&amp;rsquo;ve discussed a slew of security features on Android, mostly focusing on protecting the user from malicious &lt;em&gt;software&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;But how is the platform designed to protect the device itself against attacks? This is the question we will answer today.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2019-03-29-android-security-pt-6/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This post is the sixth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;http://localhost:1313/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-2&#34;&gt;part 2&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-3&#34;&gt;part 3&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-4&#34;&gt;part 4&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-5&#34;&gt;part 5&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;intro&#34;&gt;intro&lt;/h3&gt;&#xA;&lt;p&gt;In the previous posts in this series we&amp;rsquo;ve discussed a slew of security features on Android, mostly focusing on protecting the user from malicious &lt;em&gt;software&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;But how is the platform designed to protect the device itself against attacks? This is the question we will answer today.&lt;/p&gt;</description>
     </item>
     <item>
       <title>mobile security series part 3: package management</title>
-      <link>https://jkjensen.me/posts/2019-02-05-android-security-pt-3/</link>
+      <link>http://localhost:1313/posts/2019-02-05-android-security-pt-3/</link>
       <pubDate>Tue, 05 Feb 2019 08:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2019-02-05-android-security-pt-3/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This post is the third in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;https://jkjensen.me/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-2&#34;&gt;part 2&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lately I&amp;rsquo;ve been spending a lot of time seeking to understand Android at a lower level to drive the research I am doing on privacy and security in augmented reality. In the last week I&amp;rsquo;ve bricked and revived devices more times than I can count. In the process I&amp;rsquo;ve been studying up on this post&amp;rsquo;s topic &amp;ndash; package management &amp;ndash; and the two have worked in tandem to drive my understanding of Android as a system and framework. As a result, I will try to bring a more practical approach to how these system-level components affect Android developers. We will begin by seeking to understand the elusive APK and how it is packaged.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2019-02-05-android-security-pt-3/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This post is the third in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;http://localhost:1313/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-2&#34;&gt;part 2&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Lately I&amp;rsquo;ve been spending a lot of time seeking to understand Android at a lower level to drive the research I am doing on privacy and security in augmented reality. In the last week I&amp;rsquo;ve bricked and revived devices more times than I can count. In the process I&amp;rsquo;ve been studying up on this post&amp;rsquo;s topic &amp;ndash; package management &amp;ndash; and the two have worked in tandem to drive my understanding of Android as a system and framework. As a result, I will try to bring a more practical approach to how these system-level components affect Android developers. We will begin by seeking to understand the elusive APK and how it is packaged.&lt;/p&gt;</description>
     </item>
     <item>
       <title>mobile security series part 4: network security</title>
-      <link>https://jkjensen.me/posts/2019-02-21-android-security-pt-4/</link>
+      <link>http://localhost:1313/posts/2019-02-21-android-security-pt-4/</link>
       <pubDate>Tue, 05 Feb 2019 08:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2019-02-21-android-security-pt-4/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This post is the fourth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;https://jkjensen.me/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-2&#34;&gt;part 2&lt;/a&gt; &lt;a href=&#34;https://jkjensen.me/android-security-pt-3&#34;&gt;part 3&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Network security is an enormous and ever-changing field, but some things have remained effectively constant for a while now. Except for the threat that quantum computing poses to it, high-complexity encryption has consistently been shown to protect sensitive data from prying eyes. This, for our purposes, is how Android manages network security. The mobile system is able to provide network protection through public key infrastructure (&lt;a href=&#34;https://en.wikipedia.org/wiki/Public_key_infrastructure&#34;&gt;PKI&lt;/a&gt;).&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2019-02-21-android-security-pt-4/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This post is the fourth in a series on mobile security where we are exploring the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;http://localhost:1313/android-security-pt-1&#34;&gt;part 1&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-2&#34;&gt;part 2&lt;/a&gt; &lt;a href=&#34;http://localhost:1313/android-security-pt-3&#34;&gt;part 3&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Network security is an enormous and ever-changing field, but some things have remained effectively constant for a while now. Except for the threat that quantum computing poses to it, high-complexity encryption has consistently been shown to protect sensitive data from prying eyes. This, for our purposes, is how Android manages network security. The mobile system is able to provide network protection through public key infrastructure (&lt;a href=&#34;https://en.wikipedia.org/wiki/Public_key_infrastructure&#34;&gt;PKI&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>mobile security series part 2: permissions</title>
-      <link>https://jkjensen.me/posts/2019-01-23-android-security-pt-2/</link>
+      <link>http://localhost:1313/posts/2019-01-23-android-security-pt-2/</link>
       <pubDate>Wed, 23 Jan 2019 08:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2019-01-23-android-security-pt-2/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This post is the second part of a series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;https://jkjensen.me/android-security-pt-1&#34;&gt;part 1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Permissions are a fundamental part of any computer system&amp;rsquo;s security model and mobile systems are no exception. We briefly addressed them briefly in the &lt;a href=&#34;https://jkjensen.me/android-security-pt-1&#34;&gt;last post on architecture&lt;/a&gt;, but here we will go into detail on what permissions are and how they are enforced. We will explore how this affects both system and application development. Digging deep into the mobile permissions model allows us to gain intuition for the interaction between different parts of the operating system, and in particular how Android is designed to protect against attacks.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2019-01-23-android-security-pt-2/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This post is the second part of a series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR. &lt;a href=&#34;http://localhost:1313/android-security-pt-1&#34;&gt;part 1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Permissions are a fundamental part of any computer system&amp;rsquo;s security model and mobile systems are no exception. We briefly addressed them briefly in the &lt;a href=&#34;http://localhost:1313/android-security-pt-1&#34;&gt;last post on architecture&lt;/a&gt;, but here we will go into detail on what permissions are and how they are enforced. We will explore how this affects both system and application development. Digging deep into the mobile permissions model allows us to gain intuition for the interaction between different parts of the operating system, and in particular how Android is designed to protect against attacks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>mobile security series part 1: the android platform</title>
-      <link>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</link>
+      <link>http://localhost:1313/posts/2019-01-14-android-security-pt-1/</link>
       <pubDate>Mon, 07 Jan 2019 14:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</guid>
+      <guid>http://localhost:1313/posts/2019-01-14-android-security-pt-1/</guid>
       <description>&lt;p&gt;&lt;em&gt;This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;android-architecture&#34;&gt;android architecture&lt;/h1&gt;&#xA;&lt;p&gt;In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform. The diagram below shows the architecture of Android, with the lowest level components at the bottom.&lt;/p&gt;</description>
     </item>
     <item>
       <title>take pride in a conglomeration of work</title>
-      <link>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</link>
+      <link>http://localhost:1313/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</link>
       <pubDate>Thu, 08 Nov 2018 14:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</guid>
+      <guid>http://localhost:1313/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</guid>
       <description>&lt;p&gt;The saying goes something like &amp;ldquo;jack of all trades, master of none&amp;rdquo; right?&lt;/p&gt;&#xA;&lt;p&gt;There is something to be said about people who dig deep into a single&#xA;problem and spend their entire life&amp;rsquo;s work focused there. Just look at&#xA;people like &lt;a href=&#34;&#34;&gt;Stephen Hawking&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}. His life was his craft, and he was and continues to be richly rewarded for persistence and intelligence. Hawking left behind a legacy that is simultaneously unbelievable and inspiring. But in today&amp;rsquo;s world the odds are against you achieving hyper-success by one-track-mindedness.&lt;/p&gt;</description>
     </item>
     <item>
       <title>automating myself out of static IP paywalls</title>
-      <link>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</link>
+      <link>http://localhost:1313/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</link>
       <pubDate>Sun, 06 May 2018 14:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</guid>
+      <guid>http://localhost:1313/posts/2018-05-06-automating-myself-out-of-static-ip-paywalls/</guid>
       <description>&lt;p&gt;For a while I had an itch to set up my own home server. Not Plex or Kodi or anything like that. I just wanted a machine that I could access from anywhere and tinker with. I am by no means a network genius though; thus the itch went unscratched. Until now.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Skip the prose and get to the code via this &lt;a href=&#34;https://github.com/azjkjensen/cruiseshIP&#34;&gt;Github repository&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s start with a little background.&lt;/p&gt;&#xA;&lt;p&gt;Not long ago I volunteered at a meetup called &lt;a href=&#34;https://www.meetup.com/Learn-Computer-Programming-DevNano/&#34;&gt;DevNano&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;} in the heart of Silicon Slopes. I got the chance to help people of various ages and from a wide range of backgrounds learn to program from the ground up. It was incredible to see the dedication these people had to learn outside of their regular dayjobs. At one meeting we were discussing how the internet works and one of the instructors touched on dynamic vs. static IP addresses. Having worked in Network Operations for my school during my undergrad I was familiar with the concepts he taught. What I was not familiar with was that dynamic IP addresses aren&amp;rsquo;t really all that dynamic. He said he ran a server from home and he didn&amp;rsquo;t have a static IP address. The only inconvenience was that every few months he would have to adjust anything that pointed to the server. For home projects this is no problem; pet project SLOs are nonexistent so downtime is inconvenient but acceptable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>using the NewInstance pattern in kotlin</title>
-      <link>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</link>
+      <link>http://localhost:1313/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</link>
       <pubDate>Thu, 05 Apr 2018 14:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</guid>
+      <guid>http://localhost:1313/posts/2018-04-15-using-the-newinstance-pattern-in-kotlin/</guid>
       <description>&lt;p&gt;Kotlin has a handful of fundamental differences from Java, not the least of which being the omission of static members and methods. This can cause a bit of a headache when trying to duplicate typical Android patterns using Android’s &lt;a href=&#34;https://developer.android.com/kotlin/index.html&#34;&gt;newest official language&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Skip the prose and get to the code via this &lt;a href=&#34;https://gist.github.com/azjkjensen/cf094c79726bab08b68f01dcc2e82a71#file-myfragment-kt&#34;&gt;Github gist&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;java-example&#34;&gt;Java Example&lt;/h2&gt;&#xA;&lt;p&gt;In Java Android development it is common to add a static method called newInstance() to a fragment class like this:&lt;/p&gt;</description>
     </item>
   </channel>

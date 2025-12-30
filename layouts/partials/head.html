@@ -1,0 +1,66 @@
+<head>
+  <meta charset="utf-8" />
+  {{ hugo.Generator }}
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="{{ if .Site.Params.author.name }}{{ .Site.Params.author.name }}{{ end }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{ with .OutputFormats.Get "RSS" }}
+  <link rel="alternate" type="application/atom+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">
+  {{ end }}
+
+  {{ if .Params.description }}
+  <meta property="og:description" content="{{ .Params.description }}" />
+  <meta name="description" content="{{ .Params.description }}" />
+  {{ else if .Site.Params.description }}
+  <meta property="og:description" content="{{ .Site.Params.description }}" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  {{ end }}
+
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+  <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+  {{ if .Params.image }}
+    {{ $imgPath := "" }}
+    {{ if reflect.IsMap .Params.image }}
+      {{ if .Params.image.path }}
+        {{ $imgPath = .Params.image.path }}
+      {{ else if .Params.image.thumbnail }}
+        {{ $imgPath = .Params.image.thumbnail }}
+      {{ end }}
+    {{ else }}
+      {{ $imgPath = .Params.image }}
+    {{ end }}
+    {{ if $imgPath }}
+  <meta property="og:image" content="{{ $imgPath | absURL }}" />
+    {{ end }}
+  {{ end }}
+
+  <!-- Theme CSS -->
+  {{ with resources.Get "css/index.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+  {{ with resources.Get "css/flexboxgrid-6.3.1.min.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+  {{ end }}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
+
+  {{ if .Site.Params.twitterCards }}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  {{ if .Params.description }}
+  <meta name="twitter:description" content="{{ .Params.description }}">
+  {{ end }}
+  {{ end }}
+
+  {{ if .Site.Params.extraHead }}
+  {{ .Site.Params.extraHead | safeHTML }}
+  {{ end }}
+</head>
+

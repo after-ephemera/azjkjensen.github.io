@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work on jk jensen</title>
-    <link>https://jkjensen.me/tags/work/</link>
+    <link>http://localhost:1313/tags/work/</link>
     <description>Recent content in Work on jk jensen</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Feb 2022 09:25:52 -0500</lastBuildDate>
-    <atom:link href="https://jkjensen.me/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>what meta does to retain me</title>
-      <link>https://jkjensen.me/posts/2022-02-21-what-meta-does-to-retain-me/</link>
+      <link>http://localhost:1313/posts/2022-02-21-what-meta-does-to-retain-me/</link>
       <pubDate>Mon, 21 Feb 2022 09:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2022-02-21-what-meta-does-to-retain-me/</guid>
+      <guid>http://localhost:1313/posts/2022-02-21-what-meta-does-to-retain-me/</guid>
       <description>&lt;p&gt;(thoughts are my own and not representative of those of my employer)&lt;/p&gt;&#xA;&lt;p&gt;Lots of people have described this topic more eloquently than I can. Nothing in this post will merit a NYT article and nothing, really, will be groundbreaking. But a recent blog post by a friend about &lt;a href=&#34;https://chalcidfly.repl.co/posts/retain/&#34;&gt;why he left&lt;/a&gt;{:target=&amp;ldquo;blank&amp;rdquo;} gave me pause – why do I stay here instead of finding the next great thing? If my resume is any indication, I&amp;rsquo;m not afraid to jump ship when a big opportunity presents itself; I have wondered time and again if I&amp;rsquo;m flakey or distractable or if I just don&amp;rsquo;t have the grit to stick it out through hard things. But here I am three years later and still enamored with my work.&lt;/p&gt;</description>
     </item>
   </channel>

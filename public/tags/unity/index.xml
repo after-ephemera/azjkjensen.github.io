@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unity on jk jensen</title>
-    <link>https://jkjensen.me/tags/unity/</link>
+    <link>http://localhost:1313/tags/unity/</link>
     <description>Recent content in Unity on jk jensen</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Jan 2019 14:25:52 -0500</lastBuildDate>
-    <atom:link href="https://jkjensen.me/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/unity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mobile security series part 1: the android platform</title>
-      <link>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</link>
+      <link>http://localhost:1313/posts/2019-01-14-android-security-pt-1/</link>
       <pubDate>Mon, 07 Jan 2019 14:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2019-01-14-android-security-pt-1/</guid>
+      <guid>http://localhost:1313/posts/2019-01-14-android-security-pt-1/</guid>
       <description>&lt;p&gt;&lt;em&gt;This post is the first part of a new series on mobile security where we will explore the Android platform, how security is approached in a mobile context, and what that means for future mobile platforms like AR and VR.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;android-architecture&#34;&gt;android architecture&lt;/h1&gt;&#xA;&lt;p&gt;In order to understand mobile security one must become familiar with the mobile platform itself. We will start at the lowest level and review the form and function of each section of the platform. The diagram below shows the architecture of Android, with the lowest level components at the bottom.&lt;/p&gt;</description>
     </item>
     <item>
       <title>take pride in a conglomeration of work</title>
-      <link>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</link>
+      <link>http://localhost:1313/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</link>
       <pubDate>Thu, 08 Nov 2018 14:25:52 -0500</pubDate>
-      <guid>https://jkjensen.me/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</guid>
+      <guid>http://localhost:1313/posts/2018-12-19-take-pride-in-a-conglomeration-of-work/</guid>
       <description>&lt;p&gt;The saying goes something like &amp;ldquo;jack of all trades, master of none&amp;rdquo; right?&lt;/p&gt;&#xA;&lt;p&gt;There is something to be said about people who dig deep into a single&#xA;problem and spend their entire life&amp;rsquo;s work focused there. Just look at&#xA;people like &lt;a href=&#34;&#34;&gt;Stephen Hawking&lt;/a&gt;{:target=&amp;quot;_blank&amp;quot;}. His life was his craft, and he was and continues to be richly rewarded for persistence and intelligence. Hawking left behind a legacy that is simultaneously unbelievable and inspiring. But in today&amp;rsquo;s world the odds are against you achieving hyper-success by one-track-mindedness.&lt;/p&gt;</description>
     </item>
   </channel>
