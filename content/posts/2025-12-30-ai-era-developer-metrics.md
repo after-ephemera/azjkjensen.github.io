@@ -49,6 +49,4 @@ When code generation becomes a commodity, the value of an engineer shifts from b
 
 We have to stop measuring the activity of coding. Activity is now cheap. We need to start measuring the flow of value and the stability of the system. If you keep your MTTP low and your regressions near zero, the specifics of how the code was generated—whether by hand or by a prompt—become secondary to the fact that the system is working.
 
----
 
-Would you like me to create a template for a "Developer Health" dashboard that focuses on these two metrics?
