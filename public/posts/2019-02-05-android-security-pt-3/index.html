@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.153.5">
+  <meta name="generator" content="Hugo 0.155.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -85,6 +85,7 @@
 <div class="header-line"></div>
 
 
+
         </div>
         <header class="post-header">
           <h1 class="post-title">mobile security series part 3: package management</h1>
@@ -131,7 +132,7 @@ Think of the APK as a fancy compressed (zip, tar) file, because that&rsquo;s as 
 <p>This is an incredibly useful aspect of the mobile system, because code signing is a standard part of the development process; however, <strong>there is no guarantee that the contained code is not malicious</strong>. It is paramount to understand that <em>the security of code signing is limited by the amount of trust between the user and the developer</em>. Since Android signing certificates are self generated (not by a Certificate Authority, or CA), there is (almost) no inspection of certificate signing other than that the each component of the package is signed with the same certificate as the others. This is a significant departure from Java&rsquo;s established way of using CA-signed code as a security tool.</p>
 <p>When a package is signed, two archive manifest files (a main manifest and a signature file) are created and inserted into the <code>META-INF</code> directory. The main manifest (usually <code>MANIFEST.SF</code>)  contains digests for each segment of the package, allowing for signing verification. The signature file consists of the same information, in addition to the key for the whole <code>MANIFEST.SF</code> file.</p>
 <p>Here is a sample signature file:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Signature-Version: 1.0
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Signature-Version: 1.0
 </span></span><span style="display:flex;"><span>Created-By: 1.0 (Android)
 </span></span><span style="display:flex;"><span>SHA-256-Digest-Manifest: Cx6V2h05NErM82qLrb2lJoKmP2nylZ56RdweeB+J0RM=
 </span></span><span style="display:flex;"><span>X-Android-APK-Signed: 2
@@ -139,7 +140,7 @@ Think of the APK as a fancy compressed (zip, tar) file, because that&rsquo;s as 
 </span></span><span style="display:flex;"><span>Name: AndroidManifest.xml
 </span></span><span style="display:flex;"><span>SHA-256-Digest: hgDZmgvi0v3LOYNTLBY9Cls7y1Iv1hYoBJwESKM37XU=
 </span></span></code></pre></div><p>Manual verification of these digests can be accomplished with the <code>openssl</code> command-line tool like this:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// Produce the SHA1 key for MANIFEST.MF
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="font-style:italic">// Produce the SHA1 key for MANIFEST.MF
 </span></span></span><span style="display:flex;"><span><span style="">➜</span> openssl sha1 -binary MANIFEST.MF |openssl base64u 
 </span></span><span style="display:flex;"><span>zb0XjEhVBxE0z2ZC+B4OW25WBxo=
 </span></span><span style="display:flex;"><span><span style="font-style:italic">// Use the produced key to generate the expected result found in the signature file.
@@ -147,7 +148,7 @@ Think of the APK as a fancy compressed (zip, tar) file, because that&rsquo;s as 
 </span></span><span style="display:flex;"><span>jTeE2Y5L3uBdQ2g40PB2n72L3dE=
 </span></span></code></pre></div><p>In the next step in the signing process the signature file is combined with a digital signature and a signature block file is generated as a binary file. Signature block files are identified by the <code>.RSA</code>, <code>.DSA</code>, or <code>.EC</code> extension and comprise the actual <em>package signature</em>. This is what the APK is signed with.</p>
 <p>After the final APK is generated you can see the signing information about it with the <code>keytool</code> command:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="">➜</span> keytool -printcert -jarfile app.apk
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="">➜</span> keytool -printcert -jarfile app.apk
 </span></span><span style="display:flex;"><span>Signer <span style="">#</span>1:
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Signature:
@@ -254,6 +255,7 @@ Other application data and metadata are also included on the <em>userdata</em> p
 
 
 
+
           
           
           <div style="height: 50px;"></div>
@@ -277,6 +279,7 @@ Other application data and metadata are also included on the <em>userdata</em> p
 
 
 
+
           </div>
           
         
@@ -288,6 +291,7 @@ Other application data and metadata are also included on the <em>userdata</em> p
   </span>
   
 </div>
+
 
 
       </div>
@@ -310,6 +314,7 @@ Other application data and metadata are also included on the <em>userdata</em> p
     }
   }
 </script>
+
 
 
   

@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.153.5">
+  <meta name="generator" content="Hugo 0.155.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -75,6 +75,7 @@
 <div class="header-line"></div>
 
 
+
         </div>
         <header class="post-header">
           <h1 class="post-title">lily58 upgrade notes</h1>
@@ -102,9 +103,9 @@
 <p>Once I dragged and dropped the <code>.uf2</code> file onto the drive, it rebooted. For some reason I had to do this for both sides, which doesn&rsquo;t appear to be documented anywhere. So plug in the USB-C, flash one board, plug it into the other side, flash that side.</p>
 <p>After this a bunch of incompatible APIs totally borked things. I had to pull out another keyboard to debug (never have less than two keyboards!). I ended up getting pretty familiar with the entire code stack I&rsquo;m running, which is actually really nice. It&rsquo;s less intimidating now.</p>
 <p>My first issue was actually seeing what the errors were. The keyboard oleds only show a tiny portion of the Python output when they crash, and only for seconds. I found out that I can connect to the serial line with the board connected via</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>screen /dev/tty.usbmodem83201 19200 
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>screen /dev/tty.usbmodem83201 19200 
 </span></span></code></pre></div><p>I don&rsquo;t know if that baud rate is correct but it seems to work fine. In order to discover the tty to use, I ran</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>ls /dev/tty.* 
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>ls /dev/tty.* 
 </span></span></code></pre></div><p>with the board connected, disconnected it, and ran it again.</p>
 <p>Since I updated circuitpython, I also had to update the adafruit libraries that kmk uses so everything could be compatible and play nicely again. I got these from their <a href="https://github.com/adafruit/Adafruit_CircuitPython_Bundle/tree/20240423">circuitpython bundle</a> and went through the tedious process of trying to run the code, looking at which lib was missing, and adding that lib. That way I only got what I needed.</p>
 <p>I checked these files into <a href="https://github.com/after-ephemera/keeb_cfg/tree/main">my repo</a> so that I would just have exactly what I needed in the future and have a reference point when I want to upgrade again.</p>
@@ -126,6 +127,7 @@
           </div>
 
           
+
 
 
 
@@ -153,6 +155,7 @@
 
 
 
+
           </div>
           
         
@@ -164,6 +167,7 @@
   </span>
   
 </div>
+
 
 
       </div>
@@ -186,6 +190,7 @@
     }
   }
 </script>
+
 
 
   

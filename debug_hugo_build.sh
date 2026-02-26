@@ -75,3 +75,4 @@ log "$PAGES_BUILT" "pages_built" "initial" "D" "\"pages\":\"$PAGES_BUILT\""
 
 echo "Debug complete. Check $LOG_FILE for results."
 
+

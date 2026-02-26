@@ -10,30 +10,26 @@ _my name is Jk and i build systems._
 
 ### this site
 
-The best people I know write.
-
-Technical skills only get you so far.
-
-I have bigger ambitions.
+The best people I know write and I want to be like them. A small portion of things I write end up here.
 
 -- Posts are usually about the future of technology, building infrastructure systems, and privacy --
 
 ### about me
 
-I work at the intersection of emerging technology and software, with an emphasis on infrastructure, privacy, and AR/VR.
+I work at the intersection of emerging technology and infrastructure, with an emphasis on scalability, reliability, security, and engineering velocity. I am working on something new in the space. Reach out to hear more!
 
-I'm currently building production systems at <a href="https://mystenlabs.com" target="_blank">Mysten Labs</a>. I work on <a href="https://blog.sui.io/zklogin-salt-server-architecture/" target="_blank">zklogin</a>, the most widely used zero knowledge system on earth. I also <a href="https://www.youtube.com/watch?v=EQwpC02CQ9k" target="_blank">spoke on some of my work building reliable infrastructure fast at Pulumi Up 2024</a>. I created the incident management program that has handled the real-time response, mitigation, and long-term resolution for some <a href="https://www.coindesk.com/tech/2024/11/21/sui-network-back-up-after-scheduling-bug-leads-to-two-hour-downtime-sui-recovers" target="_blank">major</a> <a href="https://www.coindesk.com/business/2025/06/09/sui-s-cetus-dex-is-back-online-after-usd223m-exploit" target="_blank">incidents</a> on the network. People rely on Sui to be resilient and stable, thanks in part to my work.
+I was most recently building production systems at <a href="https://mystenlabs.com" target="_blank">Mysten Labs</a>. I worked on <a href="https://blog.sui.io/zklogin-salt-server-architecture/" target="_blank">zklogin</a>, the most widely used zero knowledge system on earth. I also <a href="https://www.youtube.com/watch?v=EQwpC02CQ9k" target="_blank">spoke on some of my work building reliable infrastructure fast at Pulumi Up 2024</a>. I created the incident management program that has handled the real-time response, mitigation, and long-term resolution for some <a href="https://www.coindesk.com/tech/2024/11/21/sui-network-back-up-after-scheduling-bug-leads-to-two-hour-downtime-sui-recovers" target="_blank">major</a> <a href="https://www.coindesk.com/business/2025/06/09/sui-s-cetus-dex-is-back-online-after-usd223m-exploit" target="_blank">incidents</a> on the network. People rely on Sui to be resilient and stable, thanks in part to my work.
 
 I was a production software engineer at Meta for a few years, working on privacy infrastructure and AR/VR. before that, I was at Arizona State University in <a href="http://meteor.ame.asu.edu" target="_blank">Meteor Studio</a> working on new research in augmented reality security and privacy. I spent my time during school working at various parts of the software stack, from firmware testing to fullstack to mobile.
 
-Software will define the future of humanity, and my strongest desire is to leave a legacy of software I built that my family can be proud of.
+Emerging technology pushes a brighter future closer to the present, and my strongest desire is to leave a legacy that influences humanity for good.
 
 ### tidbits
 
 - My approach to my work includes a conviction that taste and curation will drive the next generation of technology.
-- I have a daughter who lights up my world. I subscribe to the <a href="https://en.wikipedia.org/wiki/Reggio_Emilia_approach" target="_blank">reggio emilia</a> approach the best I can in my parenting.
+- I have a daughter who lights up my world. My partner and I subscribe to the <a href="https://en.wikipedia.org/wiki/Reggio_Emilia_approach" target="_blank">reggio emilia</a> approach the best we can in our parenting.
 - My partner Ariel is the yin to my yang and offers peace in my mind of chaos.
-- Rock and roll has always been a huge part of my life and recently I've gotten into a relatively niche genre that is an amalgamation of metal and hardcore aptly called metalcore. most \*core music contains lyrical themes and sounds I can find joy in. -- angry music, happy boi --
+- Rock and roll has always been a huge part of my life. Metalcore is my muse. most \*core music contains lyrical themes and sounds I can find joy in. -- angry music, happy boi --
 - Much like Murakami, I began training for endurance athletics near the end of my twenties. I enjoy running long distance wherever I can and participate in the occasional race.
 - When I was a teeenager I was an avid Boy Scout and earned the Eagle Scout award, taking many backpacking trips mostly around Arizona. Spending time in nature and making space for my family to do the same is a high priority for me.
 

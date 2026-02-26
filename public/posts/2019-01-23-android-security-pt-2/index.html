@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.153.5">
+  <meta name="generator" content="Hugo 0.155.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -85,6 +85,7 @@
 <div class="header-line"></div>
 
 
+
         </div>
         <header class="post-header">
           <h1 class="post-title">mobile security series part 2: permissions</h1>
@@ -118,7 +119,7 @@ We won&rsquo;t go into the details of why this output is formatted the way it is
 <p>Instead, this two-layer approval method exposes the user to a clearer picture of how the application developer intends to use the permission (or claims to intend to use the permission), and I think often drives growth of apps that use system resources in creative ways.</p>
 <h3 id="permissions-at-the-application-level">permissions at the application level</h3>
 <p>Adding a permission to an application is as simple as adding a <code>&lt;uses-permission&gt;</code>{:.xml} tag to the application&rsquo;s <code>AndroidManifest.xml</code> file. For example, the</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="font-weight:bold">&lt;uses-permission</span> android:name=<span style="font-style:italic">&#34;android.permission.INTERNET&#34;</span> <span style="font-weight:bold">/&gt;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="font-weight:bold">&lt;uses-permission</span> android:name=<span style="font-style:italic">&#34;android.permission.INTERNET&#34;</span> <span style="font-weight:bold">/&gt;</span>
 </span></span></code></pre></div><p>tag adds permission for the application to use the internet, a &ldquo;normal&rdquo; or non-dangerous permission that is automatically granted at install time. Dangerous permissions are declared the same way, but the user is required to grant permission at install time and runtime.</p>
 <h3 id="permission-at-the-system-level">permission at the system level</h3>
 <p><strong><em>brief aside: selinux</em></strong>
@@ -142,11 +143,11 @@ In addition to securing access behind a key, the signatureOrSystem level adds up
 /etc/permissions/platform.xml contains GIDs for each permission.
 When a permission is granted for an app, that app is given the associated supplementary GID. <em>Note: Android GIDs are static, no /etc/group file exists on the android system.</em></p>
 <p>An app&rsquo;s associated GIDs can be viewed by using</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="">➜</span> adb shell ps | grep {app <span style="font-weight:bold">package</span>}
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="">➜</span> adb shell ps | grep {app <span style="font-weight:bold">package</span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>u0_a91       13087  1873 3787932 167244 0                   0 D haulynx.com.haulynx2_0
 </span></span></code></pre></div><p>to get the app&rsquo;s pid, and then</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="">➜</span> adb shell cat /proc/13087/status
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="">➜</span> adb shell cat /proc/13087/status
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>...
 </span></span><span style="display:flex;"><span>Gid:	10091	10091	10091	10091
@@ -207,6 +208,7 @@ After forking, OS scheduling, security context, and the process&rsquo; assigned 
 
 
 
+
           
           
           <div style="height: 50px;"></div>
@@ -230,6 +232,7 @@ After forking, OS scheduling, security context, and the process&rsquo; assigned 
 
 
 
+
           </div>
           
         
@@ -241,6 +244,7 @@ After forking, OS scheduling, security context, and the process&rsquo; assigned 
   </span>
   
 </div>
+
 
 
       </div>
@@ -263,6 +267,7 @@ After forking, OS scheduling, security context, and the process&rsquo; assigned 
     }
   }
 </script>
+
 
 
   

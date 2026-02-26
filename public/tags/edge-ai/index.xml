@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edge-Ai on jk jensen</title>
+    <link>http://localhost:1313/tags/edge-ai/</link>
+    <description>Recent content in Edge-Ai on jk jensen</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/edge-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choosing Edge AI Hardware for Battery-Powered Devices</title>
+      <link>http://localhost:1313/posts/2026-01-14-choosing-edge-ai-hardware/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/2026-01-14-choosing-edge-ai-hardware/</guid>
+      <description>&lt;p&gt;Most “edge AI” buying guides start with compute specs. For battery-powered devices, system constraints matter more.&lt;/p&gt;&#xA;&lt;p&gt;If you’re running models on a battery, the hard part is the &lt;em&gt;system&lt;/em&gt; you can actually ship: sustained watts, heat, memory bandwidth, camera ingest, and a software stack that survives contact with reality.&lt;/p&gt;&#xA;&lt;p&gt;This post compares the common on-device inference options, what they’re good at, what they’re bad at, and what I’d pick in 2026 depending on constraints.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

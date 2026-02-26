@@ -7,17 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="http://localhost:1313/tags/work/" />
-  <link rel="canonical" href="http://localhost:1313/tags/work/" />
-  
-  <link rel="alternate" type="application/atom+xml" href="/tags/work/index.xml" title="jk jensen">
+  <meta property="og:url" content="http://localhost:1313/posts/2026-01-14-choosing-edge-ai-hardware/" />
+  <link rel="canonical" href="http://localhost:1313/posts/2026-01-14-choosing-edge-ai-hardware/" />
   
 
   
 
-  <title>Work - jk jensen</title>
-  <meta property="og:title" content="Work" />
-  <meta property="og:type" content="website" />
+  <title>Choosing Edge AI Hardware for Battery-Powered Devices - jk jensen</title>
+  <meta property="og:title" content="Choosing Edge AI Hardware for Battery-Powered Devices" />
+  <meta property="og:type" content="article" />
   <meta property="og:locale" content="en-us" />
   
 
@@ -35,7 +33,7 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Work">
+  <meta name="twitter:title" content="Choosing Edge AI Hardware for Battery-Powered Devices">
   
   
 
@@ -47,10 +45,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post " id="article">
     <div class="row">
       <div class="col-xs-12">
-        <header>
+        <div class="site-header">
+          <header>
   <div class="header-title">
     <a href="/">
       not kidding
@@ -77,29 +76,199 @@
 
 
 
+        </div>
+        <header class="post-header">
+          <h1 class="post-title">Choosing Edge AI Hardware for Battery-Powered Devices</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2026-01-14 00:00:00 MST">
+                14 Jan 2026
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
 
-        <h1 class="taxonomy-term">work</h1>
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2022</h1>
+        <div class="post-content markdown-body">
+          
+          <p>Most “edge AI” buying guides start with compute specs. For battery-powered devices, system constraints matter more.</p>
+<p>If you’re running models on a battery, the hard part is the <em>system</em> you can actually ship: sustained watts, heat, memory bandwidth, camera ingest, and a software stack that survives contact with reality.</p>
+<p>This post compares the common on-device inference options, what they’re good at, what they’re bad at, and what I’d pick in 2026 depending on constraints.</p>
+<hr>
+<h3 id="start-with-the-constraints-that-dominate-everything">Start with the constraints that dominate everything</h3>
+<p>Before you look at boards and chips, answer these:</p>
+<ul>
+<li><strong>Power + thermals (sustained)</strong>: What wattage can you <em>hold</em> without throttling? “Burst” numbers are mostly marketing unless you can dump heat and keep dumping it.</li>
+<li><strong>Latency vs throughput</strong>: Do you need one stream to respond in ~10–30ms, or is batching acceptable? (Most real-time perception is latency-bound.)</li>
+<li><strong>Memory and bandwidth</strong>: Model weights are only part of the footprint. Activations can dominate, and RAM bandwidth often determines real-world performance.</li>
+<li><strong>I/O realities</strong>: CSI camera vs USB; hardware video decode; storage speed; how many sensors and at what rates.</li>
+<li><strong>Toolchain + operator coverage</strong>: Your model is never “just ONNX.” Compilation, quantization, unsupported ops, and debugging time are the real costs.</li>
+<li><strong>Lifecycle</strong>: Can you buy this for 3–7 years? Will you get security updates? Are you locked to a vendor’s SDK?</li>
+</ul>
+<p>If you only remember one thing: <strong>pick the software stack first, then buy the silicon that makes it easy to ship</strong>.</p>
+<hr>
+<h3 id="the-option-buckets-and-where-each-wins">The option buckets (and where each wins)</h3>
+<h4 id="1-cpu-only-plus-aggressive-model-optimization">1) CPU-only (plus aggressive model optimization)</h4>
+<p>This is underrated. If you can live with small models (or lower frame rates), CPU-only keeps everything simple: one toolchain, no compilation surprises, and fewer “it works on my dev kit” traps.</p>
+<ul>
+<li><strong>Best for</strong>: tiny models, audio/NLP, sparse sensor pipelines, cost-sensitive builds, and when reliability &gt; peak speed.</li>
+<li><strong>Tradeoffs</strong>: perf/W can be poor for heavier vision; you’ll spend time on model design (quantization, pruning, distilled backbones) to make it fit.</li>
+</ul>
+<p>Rule of thumb: if you can meet your latency target with an 8–15W CPU budget, CPU-only is often the fastest path to a stable product.</p>
+<h4 id="2-embedded-socs-with-integrated-ai-blocks-the-perfw-default">2) Embedded SoCs with integrated AI blocks (the perf/W default)</h4>
+<p>In 2026, this is the “default good answer” for battery devices: smartphone-class or embedded SoCs where the AI engine is integrated, memory is shared, and the platform is designed for always-on workloads.</p>
+<p>Examples (product families): <strong>Qualcomm QCS/RB-class</strong>, <strong>NXP i.MX 9x-class</strong>, <strong>Rockchip RK35xx-class</strong>, and similar.</p>
+<ul>
+<li><strong>Best for</strong>: real-time camera pipelines at low-to-moderate model sizes; systems that need strong media (ISP, video decode) and low idle power.</li>
+<li><strong>Tradeoffs</strong>: you inherit a vendor toolchain. Operator coverage and compiler maturity vary. Some platforms look great on paper but are painful when your model uses “one weird layer.”</li>
+</ul>
+<p>If you’re building a device that feels like “phone-class power budgets, but with more I/O,” start here.</p>
+<h4 id="3-module-class-gpus-maximum-flexibility-higher-baseline-power">3) Module-class GPUs (maximum flexibility, higher baseline power)</h4>
+<p>These are popular because the software ecosystem is deep and familiar. NVIDIA Jetson (Orin-class) is the archetype: tons of examples, good developer experience, and fewer model-conversion dead ends.</p>
+<ul>
+<li><strong>Best for</strong>: mixed workloads (vision + mapping + classical CV), rapid iteration, and teams that can afford power/thermal headroom.</li>
+<li><strong>Tradeoffs</strong>: idle and “just running” power can be high relative to SoCs built for always-on. Thermal design is non-negotiable, and sustained performance depends heavily on enclosure and cooling.</li>
+</ul>
+<p>Recommendation: choose this when <strong>model flexibility and time-to-first-demo</strong> matter more than squeezing every joule.</p>
+<h4 id="4-purpose-built-inference-chips-great-perfw-more-constraints">4) Purpose-built inference chips (great perf/W, more constraints)</h4>
+<p>These parts exist to run neural nets efficiently with tight power. Two widely-used families are <strong>Google Coral Edge TPU</strong> and <strong>Hailo-8-class</strong> devices.</p>
+<ul>
+<li><strong>Best for</strong>: fixed or slowly-evolving model families; high perf/W; production systems where you want predictable latency and low thermals.</li>
+<li><strong>Tradeoffs</strong>: you’re signing up for a compiler. Unsupported operators, layout constraints, and quantization requirements can force model changes. Debugging toolchain issues can be time-consuming.</li>
+</ul>
+<p>These win when you can standardize on a known-good architecture and treat the model like firmware: change it carefully, validate it heavily.</p>
+<h4 id="5-fpga-niche-but-occasionally-perfect">5) FPGA (niche, but occasionally perfect)</h4>
+<p>FPGA can shine when you need deterministic latency, custom pre/post-processing, unusual sensor ingest, or when you want to fuse parts of the pipeline that are awkward on general-purpose compute.</p>
+<ul>
+<li><strong>Best for</strong>: specialized pipelines, hard real-time, and long-lived designs where upfront engineering cost is justified.</li>
+<li><strong>Tradeoffs</strong>: dev time, tool complexity, and fewer “plug-and-play” ML workflows.</li>
+</ul>
+<hr>
+<h3 id="what-id-recommend-battery-first">What I’d recommend (battery-first)</h3>
+<h4 id="if-youre-building-a-battery-device-and-want-the-best-overall-balance">If you’re building a battery device and want the best overall balance</h4>
+<p>Pick an <strong>embedded SoC with an integrated AI engine</strong>, especially if you need camera ingest, hardware video, and low idle power.</p>
+<ul>
+<li><strong>Why</strong>: strong perf/W at modest model sizes, integrated media pipeline, fewer thermal surprises.</li>
+<li><strong>Watchouts</strong>: compiler/operator support. Validate early with <em>your</em> model and representative data.</li>
+</ul>
+<h4 id="if-you-want-maximum-model-flexibility-and-a-forgiving-developer-experience">If you want maximum model flexibility and a forgiving developer experience</h4>
+<p>Pick a <strong>Jetson Orin-class module</strong> (Nano/NX-class depending on budget).</p>
+<ul>
+<li><strong>Why</strong>: you can usually run the model you have, with less time spent on conversion archaeology.</li>
+<li><strong>Watchouts</strong>: baseline power/thermals. Plan for heat from day one, and measure idle draw with your actual peripherals attached.</li>
+</ul>
+<h4 id="if-you-have-a-known-model-family-and-you-care-about-perfw-above-everything">If you have a known model family and you care about perf/W above everything</h4>
+<p>Pick a <strong>Hailo-8-class</strong> device or <strong>Coral Edge TPU</strong>, but treat model design as part of hardware selection.</p>
+<ul>
+<li><strong>Why</strong>: excellent efficiency and predictable inference characteristics.</li>
+<li><strong>Watchouts</strong>: operator coverage and toolchain quirks. Budget time for compilation and accuracy regressions during quantization.</li>
+</ul>
+<h4 id="if-youre-cost--or-reliability-constrained-and-can-keep-the-model-small">If you’re cost- or reliability-constrained and can keep the model small</h4>
+<p>Try <strong>CPU-only</strong> first.</p>
+<ul>
+<li><strong>Why</strong>: simplest stack; fewer “mystery failures”; easier production support.</li>
+<li><strong>Watchouts</strong>: you may need to redesign the model to fit the device constraints.</li>
+</ul>
+<hr>
+<h3 id="a-fast-evaluation-loop-what-to-measure-in-order">A fast evaluation loop (what to measure, in order)</h3>
+<p>Use this evaluation loop:</p>
+<ul>
+<li><strong>Run an end-to-end benchmark</strong>: camera ingest → preprocessing → inference → postprocess. This is the latency your users feel.</li>
+<li><strong>Measure sustained watts and temperature</strong>: don’t trust burst numbers. Put the device in the enclosure (or a realistic thermal mock) and run for 10–20 minutes.</li>
+<li><strong>Validate the model toolchain early</strong>: export your real model, compile it, and confirm accuracy after quantization. Operator gaps are easier to fix before you’ve built the whole product around them.</li>
+<li><strong>Check the “boring” I/O</strong>: camera drivers, hardware decode, storage throughput, and networking often dominate iteration speed.</li>
+<li><strong>Plan for versioning</strong>: record exact SDK versions, compiler versions, and model hashes. Reproducibility is a feature.</li>
+</ul>
+<hr>
+<h3 id="the-traps-that-waste-weeks">The traps that waste weeks</h3>
+<ul>
+<li><strong>Chasing peak numbers</strong>: Sustained performance on battery is about thermals and memory bandwidth.</li>
+<li><strong>Ignoring idle power</strong>: Many devices spend most of their life “waiting.” Measure idle with radios, cameras, and storage attached.</li>
+<li><strong>Assuming ONNX/TFLite portability</strong>: The last 5% of model ops is where you lose a month.</li>
+<li><strong>Underestimating conversion work</strong>: Quantization and compilation are engineering tasks that need time and validation.</li>
+<li><strong>Forgetting I/O and media</strong>: Camera and video pipelines often dominate overall performance and iteration speed.</li>
+<li><strong>No lifecycle plan</strong>: If you can’t buy it in 3 years, it’s a science project.</li>
+</ul>
+<hr>
+<h3 id="a-quick-picking-flow-3-questions">A quick picking flow (3 questions)</h3>
+<ol>
+<li><strong>Do you need maximum flexibility to run many different models?</strong> If yes, lean Jetson-class.</li>
+<li><strong>Is power/thermals your hardest constraint and the model family is stable?</strong> If yes, lean Hailo/Coral-class.</li>
+<li><strong>Do you need strong camera/media + low idle power on battery?</strong> If yes, lean embedded SoC platforms.</li>
+</ol>
+<p>If none of those clearly wins, try CPU-only with an aggressively optimized model until it doesn’t meet your latency target—then move up one bucket.</p>
 
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
             
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2022-02-21 09:25:52 -0500">Feb 21</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/2022-02-21-what-meta-does-to-retain-me/">what meta does to retain me</a>
-                  </div>
-                </div>
-              </div>
+            <div class="post-tags">
+              <a href="/tags/edge-ai/">
+                edge-ai
+              </a>
             </div>
             
-          </section>
-          
+            <div class="post-tags">
+              <a href="/tags/ml/">
+                ml
+              </a>
+            </div>
+            
+            <div class="post-tags">
+              <a href="/tags/embedded/">
+                embedded
+              </a>
+            </div>
+            
+          </div>
         </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+          <div class="post-comments">
+            
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = "http:\/\/localhost:1313\/posts\/2026-01-14-choosing-edge-ai-hardware\/";
+    this.page.identifier = "\/posts\/2026-01-14-choosing-edge-ai-hardware\/";
+  };
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jkjensen.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+          </div>
+          
+        
 
         <div class="site-footer">
   
@@ -133,6 +302,8 @@
 </script>
 
 
+
+  
 
 </body>
 

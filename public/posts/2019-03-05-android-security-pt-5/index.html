@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.153.5">
+  <meta name="generator" content="Hugo 0.155.2">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -85,6 +85,7 @@
 <div class="header-line"></div>
 
 
+
         </div>
         <header class="post-header">
           <h1 class="post-title">mobile security series part 5: cryptographic storage</h1>
@@ -131,7 +132,7 @@
 <p>The <code>KeyChain</code> class is <a href="https://developer.android.com/training/articles/keystore#WhichShouldIUse">used for holding system-wide credentials</a>{:target=&quot;_blank&quot;}. Since most use cases today utilize credentials that are private to an application, we won&rsquo;t look any further at it. <code>KeyChain</code> has a minimal API focused on retrieving private keys and checking for compatibility.</p>
 <h3 id="sdk-api-integration">sdk api integration</h3>
 <p>We&rsquo;ve spent a lot of time discussing the system side of credential storage, but such tools are only useful inasmuch as they can be used by developers. Since <em>keystore</em> was exposed as a Binder service, gaining access to it became as easy as requesting it from <code>ServiceManager</code>. Nowadays it&rsquo;s even easier to get a reference to the <code>KeyStore</code> object by calling one of the various implementations of <code>KeyStore.getInstance()</code>, which allows you to specify the keystore type. Here is how you would grab the regular Android keystore implementation:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>val keyStore:KeyStore = Keystore.getInstance(<span style="font-style:italic">&#34;AndroidKeyStore&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>val keyStore:KeyStore = Keystore.getInstance(<span style="font-style:italic">&#34;AndroidKeyStore&#34;</span>)
 </span></span></code></pre></div><h4 :target="_blank" id="keystore"><a href="https://developer.android.com/reference/java/security/KeyStore">keystore</a></h4>
 <p><code>KeyStore</code> is the most commonly used credential management tool nowadays since it integrates so well with the <em>keystore</em> system service and it uses standard JCA java cryptography architecture apis. With a reference to a <code>KeyStore</code> object and a <code>KeyPairGenerator</code> object, you can create, retrieve, and delete credentials owned by your app.</p>
 <p>On Android version 9.0 and up, <code>KeyStore</code> offers support for &ldquo;StrongBox&rdquo; backed credentials. The qualifications for &ldquo;StrongBox&rdquo; support are tighter than hardware-backed solutions; they must have secure hardware with its own processor, secure storage, and a true random number generator. The pixel 2&rsquo;s <a href="https://www.blog.google/products/android-enterprise/how-pixel-2s-security-module-delivers-enterprise-grade-security/">security module</a>{:target=&quot;_blank&quot;} used this type of hardware, but explicit Android support for it was just recently added. The pixel 3 <a href="https://www.blog.google/products/pixel/titan-m-makes-pixel-3-our-most-secure-phone-yet/">Titan M chip</a>{:target=&quot;_blank&quot;} provides additional hardware security features to further protect credentials and user data.</p>
@@ -183,6 +184,7 @@
 
 
 
+
           
           
           <div style="height: 50px;"></div>
@@ -206,6 +208,7 @@
 
 
 
+
           </div>
           
         
@@ -217,6 +220,7 @@
   </span>
   
 </div>
+
 
 
       </div>
@@ -239,6 +243,7 @@
     }
   }
 </script>
+
 
 
   
