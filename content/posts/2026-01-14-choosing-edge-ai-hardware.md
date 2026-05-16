@@ -2,7 +2,9 @@
 title = 'Choosing Edge AI Hardware for Battery-Powered Devices'
 date = 2026-01-14T00:00:00-07:00
 draft = true
-tags = ['edge-ai', 'ml', 'embedded']
+description = "An edge-AI hardware buying guide for battery-powered products: why sustained power, thermals, memory bandwidth, and toolchain coverage usually matter more than the compute specs vendors advertise."
+categories = ['engineering']
+tags = ['edge-ai', 'ml', 'embedded', 'hardware']
 +++
 
 Most “edge AI” buying guides start with compute specs. For battery-powered devices, system constraints matter more.

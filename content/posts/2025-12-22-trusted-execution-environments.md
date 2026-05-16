@@ -2,6 +2,9 @@
 title = 'Trusted Execution Environments: Beyond the Hype'
 date = 2025-12-22T09:40:00-07:00
 draft = false
+description = "A practitioner's look at what TEEs (Intel SGX, AMD SEV, ARM TrustZone, AWS Nitro Enclaves) actually deliver versus what they promise — isolation, integrity, confidentiality, attestation, and the operational reality of running them in production."
+categories = ['security']
+tags = ['security', 'privacy', 'trusted-execution', 'infrastructure', 'hardware-security']
 +++
 
 I've been thinking a lot about Trusted Execution Environments (TEEs) lately. The gap between what they promise and what people actually get from them keeps getting wider, despite increased adoption. There's this weird duality in the space: you've got teams absolutely struggling to get TEEs working reliably, and then you've got other teams running critical workloads on systems that are, frankly, incredibly flaky. Neither situation is great.

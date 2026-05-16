@@ -1,0 +1,25 @@
+{{- $siteURL := .Site.BaseURL | absURL -}}
+{{- $siteURLTrailing := printf "%s/" (strings.TrimRight "/" $siteURL) -}}
+{{- $items := slice (dict "name" "Home" "url" $siteURLTrailing) -}}
+{{- if .Section -}}
+  {{- $sectionURL := printf "%s%s/" $siteURLTrailing .Section -}}
+  {{- $items = $items | append (dict "name" (.Section | humanize | title) "url" $sectionURL) -}}
+{{- end -}}
+{{- if .IsPage -}}
+  {{- $items = $items | append (dict "name" .Title "url" .Permalink) -}}
+{{- end -}}
+{{- $list := slice -}}
+{{- range $i, $item := $items -}}
+  {{- $list = $list | append (dict
+    "@type" "ListItem"
+    "position" (add $i 1)
+    "name" $item.name
+    "item" $item.url
+  ) -}}
+{{- end -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "BreadcrumbList"
+  "itemListElement" $list
+-}}
+<script type="application/ld+json">{{ $schema | jsonify (dict "indent" "  ") | safeJS }}</script>

@@ -1,6 +1,9 @@
 +++
 title = 'lily58 upgrade notes'
 date = 2024-04-25T06:14:34-07:00
+description = "Debugging notes from upgrading the CircuitPython firmware and KMK keyboard software on a Boardsource Lulu / lily58 split keyboard."
+categories = ['hardware']
+tags = ['lily58', 'keyboards', 'circuitpython', 'kmk', 'boardsource']
 +++
 
 I have been seeing some intermittent keyboard restarts lately from my lily58 so I decided yesterday to update the firmware (circuitpython) and the kmk keyboard software running on it. These are my notes to help remember next time how I navigated it.

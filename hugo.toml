@@ -3,6 +3,13 @@ languageCode = 'en-us'
 title = 'jk jensen'
 theme = 'yinyang'
 
+enableRobotsTXT = true
+enableGitInfo = true
+
+# Replace with a real GA4 measurement ID (G-XXXXXXXXXX) to enable analytics.
+# Hugo's internal partial only emits the tag when this is non-empty.
+googleAnalytics = ""
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
@@ -13,6 +20,10 @@ noClasses = true
 style = "bw"
 tabWidth = 2
 
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
 
 [author]
 name = "Jk Jensen"
@@ -22,9 +33,22 @@ homepage = "https://jkjensen.me"
 headTitle = "not kidding"
 mainSections = ["posts", "about"]
 twitterCards = true
-extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-90708894-2"></script>'
+description = "Jk Jensen builds infrastructure systems at the intersection of emerging technology, security, and reliability. Long-form notes on trusted execution environments, privacy infrastructure, AI-era engineering, and the future of computing."
+images = ["images/og-default.png"]
+themeColor = "#111111"
 disqus = "jkjensen"
 about = "/about"
+# Paste the value from Google Search Console (Settings → Ownership verification → HTML tag)
+googleSiteVerification = ""
+
+[params.author]
+name = "Jk Jensen"
+homepage = "https://jkjensen.me"
+bio = "Jk Jensen builds infrastructure systems with a focus on scalability, reliability, security, and engineering velocity. Previously at Mysten Labs (zklogin, incident response on Sui) and Meta (privacy infrastructure, AR/VR)."
+jobTitle = "Software Engineer"
+sameAs = [
+  "https://github.com/after-ephemera",
+]
 
 [[params.socials]]
 name = "github"

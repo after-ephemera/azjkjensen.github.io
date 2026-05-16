@@ -1,0 +1,11 @@
+{
+  "name": "jk jensen",
+  "short_name": "jk jensen",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#111111",
+  "background_color": "#ffffff",
+  "display": "minimal-ui",
+  "start_url": "/"
+}

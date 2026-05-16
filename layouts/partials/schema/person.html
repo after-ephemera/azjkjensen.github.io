@@ -1,0 +1,16 @@
+{{- $siteURL := .Site.BaseURL | absURL -}}
+{{- $aboutURL := printf "%sabout/" (strings.TrimRight "/" $siteURL | printf "%s/") -}}
+{{- $personID := printf "%s#person" $siteURL -}}
+{{- $author := .Site.Params.author -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "@id" $personID
+  "name" $author.name
+  "url" $siteURL
+  "mainEntityOfPage" $aboutURL
+-}}
+{{- with $author.jobTitle }}{{ $schema = merge $schema (dict "jobTitle" .) }}{{ end -}}
+{{- with $author.bio }}{{ $schema = merge $schema (dict "description" .) }}{{ end -}}
+{{- with $author.sameAs }}{{ $schema = merge $schema (dict "sameAs" .) }}{{ end -}}
+<script type="application/ld+json">{{ $schema | jsonify (dict "indent" "  ") | safeJS }}</script>
