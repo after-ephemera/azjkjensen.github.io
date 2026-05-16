@@ -1,0 +1,46 @@
+{{- $siteURL := .Site.BaseURL | absURL -}}
+{{- $siteID := printf "%s#website" $siteURL -}}
+{{- $personID := printf "%s#person" $siteURL -}}
+
+{{/* Resolve image (page param → page bundle → site default), mirrors head.html. */}}
+{{- $image := "" -}}
+{{- with .Params.image -}}
+  {{- if reflect.IsMap . -}}
+    {{- with .path }}{{ $image = . }}{{ else }}{{ with .thumbnail }}{{ $image = . }}{{ end }}{{ end -}}
+  {{- else -}}
+    {{- $image = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- with .Resources.GetMatch "{*.png,*.jpg,*.jpeg,*.webp}" }}{{ $image = .RelPermalink }}{{ end -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- with index .Site.Params.images 0 }}{{ $image = . }}{{ end -}}
+{{- end -}}
+{{- $imageURL := "" -}}
+{{- with $image }}{{ $imageURL = . | absURL }}{{ end -}}
+
+{{- $description := "" -}}
+{{- with .Description }}{{ $description = . }}{{ end -}}
+{{- if not $description }}{{ with .Params.description }}{{ $description = . }}{{ end }}{{ end -}}
+{{- if not $description }}{{ with .Summary }}{{ $description = . | plainify | truncate 200 }}{{ end }}{{ end -}}
+
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "headline" .Title
+  "url" .Permalink
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "inLanguage" .Site.LanguageCode
+  "articleSection" .Section
+  "wordCount" .WordCount
+  "author" (dict "@id" $personID)
+  "publisher" (dict "@id" $personID)
+  "isPartOf" (dict "@id" $siteID)
+-}}
+{{- with $description }}{{ $schema = merge $schema (dict "description" .) }}{{ end -}}
+{{- with $imageURL }}{{ $schema = merge $schema (dict "image" (slice .)) }}{{ end -}}
+{{- with .Params.tags }}{{ $schema = merge $schema (dict "keywords" .) }}{{ end -}}
+<script type="application/ld+json">{{ $schema | jsonify (dict "indent" "  ") | safeJS }}</script>

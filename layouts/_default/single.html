@@ -28,6 +28,13 @@
               {{ end }}
             </div>
           </div>
+          <div class="post-meta" style="font-size:.85em;opacity:.7;margin-top:.25em;">
+            <span>{{ .ReadingTime }} min read</span>
+            <span> &middot; {{ .WordCount }} words</span>
+            {{ if and .Lastmod (gt (.Lastmod.Sub .Date).Hours 24.0) }}
+            <span> &middot; updated <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "02 Jan 2006" }}</time></span>
+            {{ end }}
+          </div>
           {{ end }}
         </header>
 
@@ -54,6 +61,7 @@
             </div>
           </div>
 
+          {{ partial "post-author.html" . }}
           {{ partial "related.html" . }}
 
           {{ if .Site.Params.postAds }}

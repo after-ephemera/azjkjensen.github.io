@@ -1,10 +1,13 @@
 ---
 title: "what meta does to retain me"
+description: "An inside look at the levers Meta uses to retain engineers — compensation structure, culture, growth — and what doesn't show up in a recruiter's pitch."
 categories:
   - work
 tags:
   - work
   - meta
+  - engineering-culture
+  - retention
 date: 2022-02-21T09:25:52-05:00
 excerpt: ""
 ---

@@ -1,0 +1,13 @@
+{{ $author := .Site.Params.author }}
+<aside class="post-author-bio" style="margin-top:3em;padding:1.5em 0;border-top:1px solid rgba(0,0,0,.1);">
+  <div style="font-size:.95em;line-height:1.5;">
+    <strong>{{ $author.name }}</strong>{{ with $author.jobTitle }} — <span>{{ . }}</span>{{ end }}
+    {{ with $author.bio }}<p style="margin-top:.5em;">{{ . }}</p>{{ end }}
+    <p style="margin-top:.5em;">
+      <a href="{{ "/about/" | relLangURL }}">More about the author</a>
+      {{ range .Site.Params.socials }}
+      &middot; <a href="{{ .link }}" {{ if strings.HasPrefix .link "http" }}target="_blank" rel="noopener"{{ end }}>{{ .name }}</a>
+      {{ end }}
+    </p>
+  </div>
+</aside>

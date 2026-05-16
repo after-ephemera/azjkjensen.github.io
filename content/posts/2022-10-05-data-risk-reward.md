@@ -1,10 +1,13 @@
 ---
 title: 'Data Risk and Data Reward'
+description: "On the tradeoffs between unlocking value from data and the privacy, governance, and security risks that come with it — and what teams can do to measure both."
 categories:
   - data
 tags:
   - data
   - jetty
+  - privacy
+  - data-governance
 date: 2022-11-21T09:25:52-05:00
 excerpt: ''
 ---

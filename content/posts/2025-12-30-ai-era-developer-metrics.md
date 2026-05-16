@@ -2,6 +2,9 @@
 title = 'AI-Era Developer Metrics'
 date = 2025-12-30T00:00:00-07:00
 draft = false
+description = "DORA metrics were built for a world where code was expensive to write. With most developers now using AI coding tools, throughput no longer measures what we think it does — here's what to track instead."
+categories = ['engineering']
+tags = ['developer-productivity', 'ai', 'dora', 'engineering-management', 'metrics']
 +++
 
 

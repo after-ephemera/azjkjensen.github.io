@@ -1,0 +1,16 @@
+{{- $siteURL := .Site.BaseURL | absURL -}}
+{{- $siteID := printf "%s#website" $siteURL -}}
+{{- $personID := printf "%s#person" $siteURL -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "@id" $siteID
+  "url" $siteURL
+  "name" .Site.Title
+  "inLanguage" .Site.LanguageCode
+  "publisher" (dict "@id" $personID)
+-}}
+{{- with .Site.Params.description -}}
+  {{- $schema = merge $schema (dict "description" .) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $schema | jsonify (dict "indent" "  ") | safeJS }}</script>
